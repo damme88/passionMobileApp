@@ -26,10 +26,10 @@ public class FirstMeetActivity extends AppCompatActivity {
 
     public void MessageMap()
     {
-        btnRunAll = (Button)findViewById(R.id.btnRunAll);
-        btnStop = (Button)findViewById(R.id.btnStopRunAll);
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
+        btnRunAll = (Button)findViewById(R.id.fmPlayAll);
+        btnStop = (Button)findViewById(R.id.fmStopAll);
+        btnBack = (Button)findViewById(R.id.fmBack);
+        listView = (ListView)findViewById(R.id.fmListView);
     }
 
     public void Init()
@@ -96,7 +96,7 @@ public class FirstMeetActivity extends AppCompatActivity {
         MessageMap();
         Init();
         userAdapter = new UserCustomListView(FirstMeetActivity.this, R.layout.row, userArray);
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ListView) findViewById(R.id.fmListView);
         listView.setItemsCanFocus(false);
         listView.setAdapter(userAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

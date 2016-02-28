@@ -13,7 +13,7 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnBack"
+        android:id="@+id/introBack"
         android:background="@drawable/exit"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -21,11 +21,11 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnNext"
+        android:id="@+id/introNext"
         android:background="@drawable/next"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnBack"
-        android:layout_toEndOf="@+id/btnBack"
+        android:layout_toRightOf="@+id/introBack"
+        android:layout_toEndOf="@+id/introBack"
         android:layout_marginLeft="53dp"
         android:layout_marginStart="25dp" />
 

@@ -29,10 +29,10 @@ public class TourismActitvity extends AppCompatActivity {
     Thread timer;
     public void MessageMap()
     {
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
-        btnRunAll = (Button)findViewById(R.id.btnRunAll);
-        btnStop = (Button)findViewById(R.id.btnStopRunAll);
+        btnBack = (Button)findViewById(R.id.tourBack);
+        listView = (ListView)findViewById(R.id.tourListview);
+        btnRunAll = (Button)findViewById(R.id.tourPlayAll);
+        btnStop = (Button)findViewById(R.id.tourStopAll);
     }
 
     public void Init()
@@ -87,7 +87,7 @@ public class TourismActitvity extends AppCompatActivity {
 
         userAdapter = new UserCustomListView(TourismActitvity.this, R.layout.row,
                 userArray);
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ListView) findViewById(R.id.tourListview);
         listView.setItemsCanFocus(false);
         listView.setAdapter(userAdapter);
 

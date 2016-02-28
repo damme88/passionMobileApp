@@ -11,7 +11,7 @@
     tools:context="com.passionpham_eng88.basicenglishforyou.WordsActivity">
 
     <ListView
-        android:id="@+id/listviewWord"
+        android:id="@+id/wordListView"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:verticalScrollbarPosition="left"
@@ -22,7 +22,7 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnBack"
+        android:id="@+id/wordBack"
         android:background="@drawable/exit"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

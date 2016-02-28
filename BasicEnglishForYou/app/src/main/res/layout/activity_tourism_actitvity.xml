@@ -11,7 +11,7 @@
     tools:context="com.passionpham_eng88.basicenglishforyou.TourismActitvity">
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/tourListview"
         android:layout_width="fill_parent"
         android:layout_height="400dp"
         android:verticalScrollbarPosition="left"
@@ -22,7 +22,7 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnBack"
+        android:id="@+id/tourBack"
         android:background="@drawable/exit"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -30,22 +30,22 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnRunAll"
+        android:id="@+id/tourPlayAll"
         android:background="@drawable/playall"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnBack"
-        android:layout_toEndOf="@+id/btnBack" />
+        android:layout_toRightOf="@+id/tourBack"
+        android:layout_toEndOf="@+id/tourBack" />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnStopRunAll"
+        android:id="@+id/tourStopAll"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:background="@drawable/stop"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnRunAll"
-        android:layout_toEndOf="@+id/btnRunAll" />
+        android:layout_toRightOf="@+id/tourPlayAll"
+        android:layout_toEndOf="@+id/tourPlayAll" />
 </RelativeLayout>

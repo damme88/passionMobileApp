@@ -26,9 +26,9 @@ public class IntroduceActivity extends AppCompatActivity {
 
     public  void MessageMap()
     {
-        btnBack = (Button)findViewById(R.id.btnBack);
+        btnBack = (Button)findViewById(R.id.introBack);
         selfDesScreen = (RelativeLayout)findViewById(R.id.seflDescription);
-        btnNext = (Button)findViewById(R.id.btnNext);
+        btnNext = (Button)findViewById(R.id.introNext);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

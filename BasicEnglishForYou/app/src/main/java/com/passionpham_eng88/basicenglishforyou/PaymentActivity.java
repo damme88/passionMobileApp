@@ -25,10 +25,10 @@ public class PaymentActivity extends AppCompatActivity {
     Thread timer;
     public void MessageMap()
     {
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
-        btnRunAll = (Button)findViewById(R.id.btnRunAll);
-        btnStop = (Button)findViewById(R.id.btnStopRunAll);
+        btnBack = (Button)findViewById(R.id.payBack);
+        listView = (ListView)findViewById(R.id.payListview);
+        btnRunAll = (Button)findViewById(R.id.payPlayAll);
+        btnStop = (Button)findViewById(R.id.payStopAll);
     }
 
     public void Init() {
@@ -79,7 +79,7 @@ public class PaymentActivity extends AppCompatActivity {
         Init();
         userAdapter = new UserCustomListView(PaymentActivity.this, R.layout.row,
                 userArray);
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ListView) findViewById(R.id.payListview);
         listView.setItemsCanFocus(false);
         listView.setAdapter(userAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

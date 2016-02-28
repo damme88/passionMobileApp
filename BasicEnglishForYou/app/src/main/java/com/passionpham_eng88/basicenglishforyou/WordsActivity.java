@@ -53,8 +53,8 @@ public class WordsActivity extends AppCompatActivity {
 
     public  void MessageMap()
     {
-        listword = (ListView)findViewById(R.id.listviewWord);
-        btn_back = (Button)findViewById(R.id.btnBack);
+        listword = (ListView)findViewById(R.id.wordListView);
+        btn_back = (Button)findViewById(R.id.wordBack);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

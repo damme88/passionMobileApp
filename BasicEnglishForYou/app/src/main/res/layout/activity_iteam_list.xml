@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.passionpham_eng88.basicenglishforyou.IteamListActivity">
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/commonListview"
         android:layout_width="fill_parent"
         android:layout_height="400dp"
         android:verticalScrollbarPosition="left"
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/btnBack"
+        android:id="@+id/commonBack"
         android:background="@drawable/exit"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

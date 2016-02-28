@@ -31,8 +31,8 @@ public class IteamListActivity extends AppCompatActivity {
     {
         //btnRunAll = (Button)findViewById(R.id.btnRunAll);
         //btnStop = (Button)findViewById(R.id.btnStopRunAll);
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
+        btnBack = (Button)findViewById(R.id.commonBack);
+        listView = (ListView)findViewById(R.id.commonListview);
     }
 
     public void Init(int type)
@@ -141,7 +141,7 @@ public class IteamListActivity extends AppCompatActivity {
         Init(type);
         userAdapter = new UserCustomListView(IteamListActivity.this, R.layout.row, userArray);
         //userAdapter.SetVisbleSpeakButton(false);
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ListView) findViewById(R.id.commonListview);
         listView.setItemsCanFocus(false);
         listView.setAdapter(userAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

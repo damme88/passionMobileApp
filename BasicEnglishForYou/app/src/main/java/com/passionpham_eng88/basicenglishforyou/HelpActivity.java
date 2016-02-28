@@ -25,10 +25,10 @@ public class HelpActivity extends AppCompatActivity {
     Thread timer;
     public void MessageMap()
     {
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
-        btnRunAll = (Button)findViewById(R.id.btnRunAll);
-        btnStop = (Button)findViewById(R.id.btnStopRunAll);
+        btnBack = (Button)findViewById(R.id.helpBack);
+        listView = (ListView)findViewById(R.id.helpListView);
+        btnRunAll = (Button)findViewById(R.id.helpPalyAll);
+        btnStop = (Button)findViewById(R.id.helpStopAll);
     }
     public  void PlayAudio(int position)
     {
@@ -78,7 +78,7 @@ public class HelpActivity extends AppCompatActivity {
             Init();
             userAdapter = new UserCustomListView(HelpActivity.this, R.layout.row,
                     userArray);
-            listView = (ListView) findViewById(R.id.listview);
+            listView = (ListView) findViewById(R.id.helpListView);
             listView.setItemsCanFocus(false);
             listView.setAdapter(userAdapter);
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

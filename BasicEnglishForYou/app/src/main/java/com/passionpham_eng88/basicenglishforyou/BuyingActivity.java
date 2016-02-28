@@ -25,10 +25,10 @@ public class BuyingActivity extends AppCompatActivity {
     MediaPlayer audio_player = new MediaPlayer();
     public void MessageMap()
     {
-        btnBack = (Button)findViewById(R.id.btnBack);
-        listView = (ListView)findViewById(R.id.listview);
-        btnRunAll = (Button)findViewById(R.id.btnRunAll);
-        btnStop = (Button)findViewById(R.id.btnStopRunAll);
+        listView = (ListView)findViewById(R.id.buyingListView);
+        btnRunAll = (Button)findViewById(R.id.buyingPlayAll);
+        btnStop = (Button)findViewById(R.id.buyingStopAll);
+        btnBack = (Button)findViewById(R.id.buyingStopAll);
     }
 
     public void Init()
@@ -108,7 +108,7 @@ public class BuyingActivity extends AppCompatActivity {
         Init();
         userAdapter = new UserCustomListView(BuyingActivity.this, R.layout.row,
                 userArray);
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ListView) findViewById(R.id.buyingListView);
         listView.setItemsCanFocus(false);
         listView.setAdapter(userAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

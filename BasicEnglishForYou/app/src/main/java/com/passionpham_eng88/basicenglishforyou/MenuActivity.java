@@ -54,8 +54,8 @@ public class MenuActivity extends AppCompatActivity {
 
     public  void MessageMap()
     {
-        list = (ListView)findViewById(R.id.listview);
-        btn_back = (Button)findViewById(R.id.btnBack);
+        list = (ListView)findViewById(R.id.menuListview);
+        btn_back = (Button)findViewById(R.id.menuBack);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
