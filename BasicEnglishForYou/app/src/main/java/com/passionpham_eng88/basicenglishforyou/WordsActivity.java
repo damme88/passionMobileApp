@@ -67,8 +67,8 @@ public class WordsActivity extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainScreen = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(mainScreen);
+                Intent menuScreen = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(menuScreen);
             }
         });
 
