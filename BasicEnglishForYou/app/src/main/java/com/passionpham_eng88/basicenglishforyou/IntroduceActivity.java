@@ -15,7 +15,7 @@ public class IntroduceActivity extends AppCompatActivity {
     Button btnNext;
     RelativeLayout selfDesScreen;
     int index = 0;
-
+    // sample about self description
     Integer[] selfImg={
             R.drawable.selfdes1,
             R.drawable.selfdes2,

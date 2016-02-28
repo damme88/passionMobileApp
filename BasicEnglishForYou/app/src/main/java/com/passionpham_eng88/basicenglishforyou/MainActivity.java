@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_begin;
     Button btn_exit;
+
     Button btn_info;
     RelativeLayout mainScreen;
     protected void MessageMap()
