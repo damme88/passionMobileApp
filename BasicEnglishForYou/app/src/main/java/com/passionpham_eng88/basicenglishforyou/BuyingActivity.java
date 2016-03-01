@@ -28,7 +28,7 @@ public class BuyingActivity extends AppCompatActivity {
         listView = (ListView)findViewById(R.id.buyingListView);
         btnRunAll = (Button)findViewById(R.id.buyingPlayAll);
         btnStop = (Button)findViewById(R.id.buyingStopAll);
-        btnBack = (Button)findViewById(R.id.buyingStopAll);
+        btnBack = (Button)findViewById(R.id.buyingBack);
     }
 
     public void Init()

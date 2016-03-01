@@ -10,6 +10,9 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class WordGroupActivity extends AppCompatActivity {
@@ -139,6 +142,9 @@ public class WordGroupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_group);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         Bundle extras = getIntent().getExtras();
         int type = -1;
         if (extras != null) {
@@ -340,7 +346,7 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Cow     : Bò"));
         userArray.add(new User("Calf    : Bê"));
         userArray.add(new User("Cock    : Gà trống"));
-        userArray.add(new User("Gen     : Gà mái"));
+        userArray.add(new User("Hen     : Gà mái"));
         userArray.add(new User("Donkey  : Con lừa"));
         userArray.add(new User("Goat    : Dê"));
         userArray.add(new User("Goose   : Ngỗng"));

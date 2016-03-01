@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -10,15 +11,15 @@
     tools:context="com.passionpham_eng88.basicenglishforyou.WordGroupActivity">
     <ListView
         android:id="@+id/wgListView"
-        android:layout_width="fill_parent"
-        android:layout_height="400dp"
+        android:layout_width="350dp"
+        android:layout_height="390dp"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
+        android:layout_below="@+id/adView">
     </ListView>
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/wgBack"
         android:background="@drawable/exit"
         android:layout_alignParentBottom="true"
@@ -26,8 +27,8 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/wgPlayAll"
         android:background="@drawable/playall"
         android:layout_marginLeft="24dp"
@@ -37,8 +38,8 @@
         android:layout_toEndOf="@+id/wgBack" />
 
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:id="@+id/wgStopAll"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
@@ -46,4 +47,14 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/wgPlayAll"
         android:layout_toEndOf="@+id/wgPlayAll" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_above="@+id/menuBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </com.google.android.gms.ads.AdView>
 </RelativeLayout>
