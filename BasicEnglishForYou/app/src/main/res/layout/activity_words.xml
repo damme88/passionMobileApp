@@ -13,7 +13,7 @@
     <ListView
         android:id="@+id/wordListView"
         android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_height="420dp"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >

@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -80,8 +83,12 @@ public class TourismActitvity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourism_actitvity);
-        getSupportActionBar().setTitle("Đi du lich (Tourism)");
 
+        AdView mAdView = (AdView) findViewById(R.id.adViewTour);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        getSupportActionBar().setTitle("Đi du lich (Tourism)");
         MessageMap();
         Init();
 

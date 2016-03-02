@@ -36,7 +36,7 @@ public class MenuActivity extends AppCompatActivity {
             "Cần Giúp đỡ",
             "Mua Bán",
             "Thanh Toán",
-            "Giới Thiệu Mình.(Phỏng Vấn)",
+            "Giới Thiệu Bản Thân",
             "Mẫu câu: Tôi cảm thấy.",
             "Mẫu câu: Cảm xúc!",
             "Nhóm Từ Vựng Cơ Bản.",

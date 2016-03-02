@@ -15,7 +15,7 @@
         android:layout_height="390dp"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/adView">
+        android:layout_below="@+id/adViewWg">
     </ListView>
     <Button
         android:layout_width="40dp"
@@ -48,7 +48,7 @@
         android:layout_toRightOf="@+id/wgPlayAll"
         android:layout_toEndOf="@+id/wgPlayAll" />
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewWg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         ads:adSize="BANNER"

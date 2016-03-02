@@ -11,19 +11,25 @@ import android.widget.ListView;
 public class WordsActivity extends AppCompatActivity {
     Button btn_back;
     ListView listword;
-    public final int FISH = 0;
-    public final int BIRD = 1;
-    public final int INSECT = 2;
-    public final int CATTLE = 3;
-    public final int WILD_ANIMAL = 4;
-    public final int FLOWERS = 5;
-    public final int MATERIAL = 6;
-    public final int METAL = 7;
-    public final int GAS = 8;
-    public final int SHAPE = 9;
-    public final int PARAM = 10;
+    public final int HOME = 0;
+    public final int HUMAN = 1;
+    public final int JOB = 2;
+    public final int FISH = 3;
+    public final int BIRD = 4;
+    public final int INSECT = 5;
+    public final int CATTLE = 6;
+    public final int WILD_ANIMAL = 7;
+    public final int FLOWERS = 8;
+    public final int MATERIAL = 9;
+    public final int METAL = 10;
+    public final int GAS = 11;
+    public final int SHAPE = 12;
+    public final int PARAM = 13;
 
     String[] itemname = {
+            "Đồ vật trong nhà",
+            "Cơ thể Người",
+            "Nghề nghiệp",
             "Nhóm Loài Cá",
             "Nhóm Chim-Gia Cầm",
             "Nhóm Côn Trùng",
@@ -38,6 +44,9 @@ public class WordsActivity extends AppCompatActivity {
     };
 
     Integer[] imgid={
+            R.drawable.home,
+            R.drawable.body,
+            R.drawable.job,
             R.drawable.wfish,
             R.drawable.wbird,
             R.drawable.wintersect,
@@ -79,6 +88,15 @@ public class WordsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case HOME:
+                        ShowWordGroupScreen(HOME);
+                        break;
+                    case HUMAN:
+                        ShowWordGroupScreen(HUMAN);
+                        break;
+                    case JOB:
+                        ShowWordGroupScreen(JOB);
+                        break;
                     case FISH:
                         ShowWordGroupScreen(FISH);
                         break;

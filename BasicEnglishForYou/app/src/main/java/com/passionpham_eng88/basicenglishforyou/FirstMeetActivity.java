@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class FirstMeetActivity extends AppCompatActivity {
@@ -92,6 +96,11 @@ public class FirstMeetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_meet);
+
+        AdView mAdView = (AdView) findViewById(R.id.adViewFm);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         getSupportActionBar().setTitle("Lần đầu gặp gỡ (First Meet)");
         MessageMap();
         Init();

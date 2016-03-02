@@ -26,17 +26,20 @@ public class WordGroupActivity extends AppCompatActivity {
     ArrayList<Integer> audio_list = new ArrayList<Integer>();
     MediaPlayer audio_player = new MediaPlayer();
 
-    public final int FISH = 0;
-    public final int BIRD = 1;
-    public final int INSECT = 2;
-    public final int CATTLE = 3;
-    public final int WILD_ANIMAL = 4;
-    public final int FLOWERS = 5;
-    public final int MATERIAL = 6;
-    public final int METAL = 7;
-    public final int GAS = 8;
-    public final int SHAPE = 9;
-    public final int PARAM = 10;
+    public final int HOME = 0;
+    public final int HUMAN = 1;
+    public final int JOB = 2;
+    public final int FISH = 3;
+    public final int BIRD = 4;
+    public final int INSECT = 5;
+    public final int CATTLE = 6;
+    public final int WILD_ANIMAL = 7;
+    public final int FLOWERS = 8;
+    public final int MATERIAL = 9;
+    public final int METAL = 10;
+    public final int GAS = 11;
+    public final int SHAPE = 12;
+    public final int PARAM = 13;
 
     public void MessageMap()
     {
@@ -50,6 +53,21 @@ public class WordGroupActivity extends AppCompatActivity {
     {
         switch (type)
         {
+            case HOME:
+            {
+                Home();
+                break;
+            }
+            case HUMAN:
+            {
+                BodyHuman();
+                break;
+            }
+            case JOB:
+            {
+                InitJob();
+                break;
+            }
             case FISH:
             {
                 InitFish();
@@ -142,7 +160,7 @@ public class WordGroupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_group);
-        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdView mAdView = (AdView) findViewById(R.id.adViewWg);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         Bundle extras = getIntent().getExtras();
@@ -228,6 +246,162 @@ public class WordGroupActivity extends AppCompatActivity {
         });
     }
 
+    public void Home()
+    {
+        getSupportActionBar().setTitle("ĐỒ VẬT TRONG NHÀ");
+        userArray.add(new User("Calendar : Lịch"));
+        userArray.add(new User("Chair    : Ghế"));
+        userArray.add(new User("Clock    : Đồng hồ treo tường"));
+        userArray.add(new User("Cup      : Cái chén"));
+        userArray.add(new User("Curtain  : Rèm cửa"));
+        userArray.add(new User("Door     : Cưa ra vào"));
+        userArray.add(new User("Fan      : Quật"));
+        userArray.add(new User("Fence    : Hàng rào"));
+        userArray.add(new User("Flat     : Căn hộ"));
+        userArray.add(new User("Floor    : Sàn nhà"));
+        userArray.add(new User("Garden   : Vườn"));
+        userArray.add(new User("House    : Nhà"));
+        userArray.add(new User("Lamp     : Cái đèn"));
+        userArray.add(new User("Pillow   : Cái gối"));
+        userArray.add(new User("Rung     : Thảm nhà"));
+        userArray.add(new User("Shelf    : Kệ sách"));
+        userArray.add(new User("Sink     : Bồn rửa bát"));
+        userArray.add(new User("Sofa     : Ghê sofa"));
+        userArray.add(new User("Stair    : Cầu thang"));
+        userArray.add(new User("Table    : Cái bàn"));
+        userArray.add(new User("Terrace  : Sân thượng"));
+        userArray.add(new User("Toilet   : Nhà vệ sinh"));
+        userArray.add(new User("Towel    : Khăn tắm"));
+        userArray.add(new User("Wall     : Bức tường"));
+        userArray.add(new User("Window   : Cửa sổ"));
+
+        audio_list.add(R.raw.hmcalendar);
+        audio_list.add(R.raw.hmchair);
+        audio_list.add(R.raw.hmclock);
+        audio_list.add(R.raw.hmcup);
+        audio_list.add(R.raw.hmcurtain);
+        audio_list.add(R.raw.hmdoor);
+        audio_list.add(R.raw.hmfan);
+        audio_list.add(R.raw.hmfence);
+        audio_list.add(R.raw.hmflat);
+        audio_list.add(R.raw.hmfloor);
+        audio_list.add(R.raw.hmgarden);
+        audio_list.add(R.raw.hmhouse);
+        audio_list.add(R.raw.hmlamp);
+        audio_list.add(R.raw.hmpillow);
+        audio_list.add(R.raw.hmrung);
+        audio_list.add(R.raw.hmshelf);
+        audio_list.add(R.raw.hmsink);
+        audio_list.add(R.raw.hmsofa);
+        audio_list.add(R.raw.hmstair);
+        audio_list.add(R.raw.hmtable);
+        audio_list.add(R.raw.hmterrace);
+        audio_list.add(R.raw.hmtoilet);
+        audio_list.add(R.raw.hmtowel);
+        audio_list.add(R.raw.hmwall);
+        audio_list.add(R.raw.hmwindow);
+    }
+    public void BodyHuman()
+    {
+        getSupportActionBar().setTitle("CƠ THỂ NGƯỜI");
+        userArray.add(new User("beard : râu"));
+        userArray.add(new User("blood : máu"));
+        userArray.add(new User("body  : cơ thể"));
+        userArray.add(new User("bone  : xương"));
+        userArray.add(new User("bowel : Ruột"));
+        userArray.add(new User("breast : Ngực"));
+        userArray.add(new User("Buttoks: Mông"));
+        userArray.add(new User("Chin   : Cằm"));
+        userArray.add(new User("Ear    : Tai"));
+        userArray.add(new User("Eye	: Mắt"));
+        userArray.add(new User("Face   : Mặt"));
+        userArray.add(new User("Fingger: Ngón tay"));
+        userArray.add(new User("Flesh  : Da - Thịt"));
+        userArray.add(new User("Foot   : Bàn Chân"));
+        userArray.add(new User("Hair   : Tóc"));
+        userArray.add(new User("Hand   : Bàn tay"));
+        userArray.add(new User("Head   : Cái đầu"));
+        userArray.add(new User("Heart  : Trái tim"));
+        userArray.add(new User("Jaw    : Quai hàm"));
+        userArray.add(new User("Lip    : Môi"));
+        userArray.add(new User("Moustache : Râu mép"));
+        userArray.add(new User("Mouth  : Cái miệng"));
+        userArray.add(new User("Nose   : Mũi"));
+        userArray.add(new User("Nostril : lỗi mũi"));
+        userArray.add(new User("Tear    : Nước mắt"));
+        userArray.add(new User("Thigh   : Đùi"));
+        userArray.add(new User("Throat  : Cổ họng"));
+        userArray.add(new User("Tongue  : Lưỡi"));
+        userArray.add(new User("Tooth - Teeth : Răng - Hàm răng"));
+
+        audio_list.add(R.raw.bobeard);
+        audio_list.add(R.raw.boblood);
+        audio_list.add(R.raw.bobody);
+        audio_list.add(R.raw.bobone);
+        audio_list.add(R.raw.bobowel);
+        audio_list.add(R.raw.bobreast);
+        audio_list.add(R.raw.bobuttoks);
+        audio_list.add(R.raw.bochin);
+        audio_list.add(R.raw.boear);
+        audio_list.add(R.raw.boeye);
+        audio_list.add(R.raw.boface);
+        audio_list.add(R.raw.bofingger);
+        audio_list.add(R.raw.boflesh);
+        audio_list.add(R.raw.bofoot);
+        audio_list.add(R.raw.bohair);
+        audio_list.add(R.raw.bohand);
+        audio_list.add(R.raw.bohead);
+        audio_list.add(R.raw.boheart);
+        audio_list.add(R.raw.bojaw);
+        audio_list.add(R.raw.bolip);
+        audio_list.add(R.raw.bomoustache);
+        audio_list.add(R.raw.bomous);
+        audio_list.add(R.raw.bonose);
+        audio_list.add(R.raw.bonostril);
+        audio_list.add(R.raw.botear);
+        audio_list.add(R.raw.bothigh);
+        audio_list.add(R.raw.bothroat);
+        audio_list.add(R.raw.botongue);
+        audio_list.add(R.raw.botoothteeth);
+    }
+
+    public void InitJob()
+    {
+        getSupportActionBar().setTitle("NGHỀ NGHIỆP");
+        userArray.add(new User("Actor   : Nam diễn viên"));
+        userArray.add(new User("Actress : Nữ diễn viên"));
+        userArray.add(new User("Athlete : Vận động viên"));
+        userArray.add(new User("Chef    : Bếp trưởng"));
+        userArray.add(new User("Fish man : Ngư dân"));
+        //userArray.add(new User("Lady      : Qúy bà"));
+        userArray.add(new User("Librarian : Thủ thư"));
+        userArray.add(new User("Musician  : Nhạc sỹ"));
+        userArray.add(new User("Pilot     : Phi công"));
+        userArray.add(new User("Policeman : Cảnh sát"));
+        userArray.add(new User("Post man  : Người đưa thư"));
+        userArray.add(new User("Queen     : nữ hoàng"));
+        userArray.add(new User("Sales man : Người bán hàng"));
+        userArray.add(new User("Secretary : Thư ký"));
+        userArray.add(new User("Nurse     : y tá"));
+        userArray.add(new User("Programmer : Lập trình viên"));
+
+        audio_list.add(R.raw.joactor);
+        audio_list.add(R.raw.joactress);
+        audio_list.add(R.raw.joathlete);
+        audio_list.add(R.raw.jochef);
+        audio_list.add(R.raw.jofishman);
+        //audio_list.add(R.raw.jolady);
+        audio_list.add(R.raw.jolibrarian);
+        audio_list.add(R.raw.jomusician);
+        audio_list.add(R.raw.jopilot);
+        audio_list.add(R.raw.jopoliceman);
+        audio_list.add(R.raw.jopostman);
+        audio_list.add(R.raw.joqueen);
+        audio_list.add(R.raw.josalesman);
+        audio_list.add(R.raw.josecretary);
+        audio_list.add(R.raw.jonurse);
+        audio_list.add(R.raw.joprogrammer);
+    }
     public void InitFish()
     {
         getSupportActionBar().setTitle("CÁC LOÀI CÁ");
