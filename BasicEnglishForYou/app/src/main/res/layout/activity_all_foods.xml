@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0fffffff"
+    tools:context="com.passionpham_eng88.basicenglishforyou.AllFoodsActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgFood"
+        android:src="@drawable/afmeat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgMilk"
+        android:src="@drawable/afmilk"
+        android:layout_alignTop="@+id/imgFood"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgFruits"
+        android:src="@drawable/affruits"
+        android:layout_alignTop="@+id/imgMilk"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/allFoodBack"
+        android:background="@drawable/exit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgVegetable"
+        android:src="@drawable/afvegetable"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgDrinking"
+        android:src="@drawable/afdrinking"
+        android:layout_alignBottom="@+id/imgVegetable"
+        android:layout_alignLeft="@+id/imgMilk"
+        android:layout_alignStart="@+id/imgMilk" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgCake"
+        android:src="@drawable/afcake"
+        android:layout_alignBottom="@+id/imgDrinking"
+        android:layout_alignLeft="@+id/imgFruits"
+        android:layout_alignStart="@+id/imgFruits" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgToolCooking"
+        android:src="@drawable/aftoolcooking"
+        android:layout_above="@+id/allFoodBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgSpices"
+        android:src="@drawable/afspices"
+        android:layout_alignTop="@+id/imgToolCooking"
+        android:layout_alignLeft="@+id/imgDrinking"
+        android:layout_alignStart="@+id/imgDrinking" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgCookType"
+        android:src="@drawable/afcooktype"
+        android:layout_alignBottom="@+id/imgSpices"
+        android:layout_alignLeft="@+id/imgCake"
+        android:layout_alignStart="@+id/imgCake" />
+</RelativeLayout>

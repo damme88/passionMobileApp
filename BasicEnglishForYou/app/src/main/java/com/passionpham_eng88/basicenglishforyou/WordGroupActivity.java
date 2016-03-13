@@ -41,6 +41,17 @@ public class WordGroupActivity extends AppCompatActivity {
     public final int SHAPE = 12;
     public final int PARAM = 13;
 
+    public final int FOODS_MEET = 20;
+    public final int FOODS_MILK = 21;
+    public final int FOODS_FRUITS = 22;
+
+    public final int FOODS_VEGETABLE = 23;
+    public final int FOODS_DRINKING = 24;
+    public final int FOODS_CAKE = 25;
+    public final int COOK_TOOL = 26;
+    public final int COOK_SPICES= 27;
+    public final int COOK_TYPE = 28;
+
     public void MessageMap()
     {
         btnRunAll = (Button)findViewById(R.id.wgPlayAll);
@@ -121,6 +132,51 @@ public class WordGroupActivity extends AppCompatActivity {
             case PARAM:
             {
                 InitParam();
+                break;
+            }
+            case FOODS_MEET:
+            {
+                InitFoodMeet();
+                break;
+            }
+            case FOODS_MILK:
+            {
+                InitFoodMilk();
+                break;
+            }
+            case FOODS_FRUITS:
+            {
+                InitFoodFruits();
+                break;
+            }
+            case FOODS_VEGETABLE:
+            {
+                InitVegetable();
+                break;
+            }
+            case FOODS_DRINKING:
+            {
+                InitDrinking();
+                break;
+            }
+            case FOODS_CAKE:
+            {
+                InitCake();
+                break;
+            }
+            case COOK_TOOL:
+            {
+                InitCookTool();
+                break;
+            }
+            case COOK_SPICES:
+            {
+                InitCookingSpices();
+                break;
+            }
+            case COOK_TYPE:
+            {
+                InitCookingType();
                 break;
             }
             default:
@@ -210,8 +266,23 @@ public class WordGroupActivity extends AppCompatActivity {
                 if (userArray.size() > 0) {
                     userArray.clear();
                 }
+
+                Bundle extras = getIntent().getExtras();
+                int type = -1;
+                if (extras != null) {
+                    type  = extras.getInt("Type");
+                }
+
                 Intent wordGroup = new Intent(getApplicationContext(), WordsActivity.class);
-                startActivity(wordGroup);
+                Intent foodGroup = new Intent(getApplicationContext(), AllFoodsActivity.class);
+                if (type >= FOODS_MEET && type <= COOK_TYPE)
+                {
+                    startActivity(foodGroup);
+                }
+                else
+                {
+                    startActivity(wordGroup);
+                }
             }
         });
         btnRunAll.setOnClickListener(new View.OnClickListener() {
@@ -808,5 +879,217 @@ public class WordGroupActivity extends AppCompatActivity {
         audio_list.add(R.raw.prstraightline);
         audio_list.add(R.raw.prcurve);
         audio_list.add(R.raw.prvolume);
+    }
+    public void InitFoodMeet()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI THỊT");
+        userArray.add(new User("Liver       : Gan"));
+        userArray.add(new User("Ham         : Giăm Bông"));
+        userArray.add(new User("Pate        : Pa tê"));
+        userArray.add(new User("veal        : Thịt Bê"));
+        userArray.add(new User("Beef        : Thị Bò"));
+        userArray.add(new User("Lamb        : Thịt Cừu"));
+        userArray.add(new User("Chicken     : Thị Gà"));
+        userArray.add(new User("turkey      : Thịt gà tây"));
+        userArray.add(new User("Pork        : Thịt Lợn"));
+        userArray.add(new User("Bacon       : Thịt Muối"));
+        userArray.add(new User("Cooked meat : Thị nấu chín"));
+        userArray.add(new User("Duck        : Thịt Vịt"));
+        userArray.add(new User("Sausages    : Xúc xíc"));
+
+    }
+    public void InitFoodMilk()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI SỮA - ĐỒ UỐNG");
+        userArray.add(new User("Butter     : Bơ"));
+        userArray.add(new User("Cream      : Kem"));
+        userArray.add(new User("Cheese     : Phô mai"));
+        userArray.add(new User("Egg        : Trứng"));
+        userArray.add(new User("Milk       : Sữa"));
+        userArray.add(new User("Sour cream : Kem chua"));
+        userArray.add(new User("Yoghurt    : Sữa chua"));
+        userArray.add(new User("Beer       : Bia"));
+        userArray.add(new User("Bitter     : Rượu Đắng"));
+        userArray.add(new User("Wine       : Rượu"));
+        userArray.add(new User("Champagne  : Sâm banh"));
+        userArray.add(new User("Alcohol    : Rượu bia nói chung"));
+        userArray.add(new User("Spirits    : Rượu mạnh"));
+    }
+    public void InitFoodFruits()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI TRÁI CÂY");
+        userArray.add(new User("Cherry      : Anh đào"));
+        userArray.add(new User("Grapefruit  : Bưởi"));
+        userArray.add(new User("Orange 	    : Cam"));
+        userArray.add(new User("Banana 	    : Chuối"));
+        userArray.add(new User("Melon 	    : Dưa"));
+        userArray.add(new User("Coconut     : Dừa"));
+        userArray.add(new User("Pineapple   : Dứa"));
+        userArray.add(new User("Peach 	    : Đào"));
+        userArray.add(new User("Pear 	    : Lê"));
+        userArray.add(new User("Plum 	    : Mận"));
+        userArray.add(new User("Apricot     : Mơ"));
+        userArray.add(new User("Grape 	    : Nho"));
+        userArray.add(new User("Fig 	    : Sung"));
+        userArray.add(new User("Apple       : Táo"));
+        userArray.add(new User("Mango 	    : Xoài"));
+        userArray.add(new User("Kiwi fruit  : Quả Kiwi"));
+        userArray.add(new User("Lemon 	    : Quả Chanh tây"));
+        userArray.add(new User("Lime 	    : Quả Chanh ta"));
+        userArray.add(new User("Pomegranate : Quả Lựu"));
+        userArray.add(new User("Raspberry 	: Quả mâm xôi đỏ"));
+        userArray.add(new User("Blackberry  : Quả mâm xôi đen"));
+        userArray.add(new User("Strawberry 	: Quả Dâu"));
+
+    }
+
+    public void InitVegetable()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI RAU - CỦ- HẠT");
+        userArray.add(new User("Cabbage: Bắp cải"));
+        userArray.add(new User("Cacao: Cây ca cao"));
+        userArray.add(new User("Catawissa: Hành ta"));
+        userArray.add(new User("Cauliflower: Hoa cải, hoa lơ"));
+        userArray.add(new User("Celery: Cần tây"));
+        userArray.add(new User("Chayote : Su su"));
+        userArray.add(new User("Chestnut: Hạt dẻ"));
+        userArray.add(new User("Coleslaw: Xà lách cải bắp"));
+        userArray.add(new User("Cucumber: Dưa leo"));
+        userArray.add(new User("Eggplant: Cà tím"));
+        userArray.add(new User("Galangal: Củ Giềng"));
+        userArray.add(new User("Garlic: Tỏi"));
+        userArray.add(new User("Kale: Cải ngọt"));
+        userArray.add(new User("Knotgrass: Rau răm"));
+        userArray.add(new User("Kohlrabi: Su hào"));
+        userArray.add(new User("Lettuce: Rau diếp"));
+        userArray.add(new User("Ginger, Ginger root: Gừng"));
+        userArray.add(new User("Gourd: Quả bầu"));
+        userArray.add(new User("Tomato: Cà chua"));
+        userArray.add(new User("Dill: Cây thì là"));
+        userArray.add(new User("Water morning glory: Rau Muống"));
+        userArray.add(new User("Wild Betel leave: Lá Lốt"));
+        userArray.add(new User("White Radish: Củ Cải Trắng"));
+        userArray.add(new User("Yam: (Mỹ) Khoai lang"));
+    }
+
+    public void InitDrinking()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI ĐỒ UỐNG");
+        userArray.add(new User("mineral water: nước khoáng"));
+        userArray.add(new User("fruit juice: nước trái cây\n"));
+        userArray.add(new User("orange juice: nước cam"));
+        userArray.add(new User("pineapple juice: nước dứa"));
+        userArray.add(new User("tomato juice: nước cà chua"));
+        userArray.add(new User("smoothies: sinh tố"));
+        userArray.add(new User("lemonade: nước chanh"));
+        userArray.add(new User("squash: nước ép"));
+        userArray.add(new User("iced tea: trà đá"));
+        userArray.add(new User("Tea: Trà"));
+        userArray.add(new User("coffee: cà phê"));
+        userArray.add(new User("cocoa: ca cao"));
+        userArray.add(new User("beer: Bia"));
+        userArray.add(new User("Wine: Rượu"));
+    }
+
+    public void InitCake()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI BÁNH-BỘT");
+        userArray.add(new User("Bread – Bánh mì"));
+        userArray.add(new User("Quick bread – Bánh mì nhanh"));
+        userArray.add(new User("stuffed pancake: Bánh cuốn"));
+        userArray.add(new User("round sticky rice cake: Bánh dầy"));
+        userArray.add(new User("girdle-cake: Bánh tráng"));
+        userArray.add(new User("shrimp in batter: Bánh tôm"));
+        userArray.add(new User("young rice cake: Bánh cốm "));
+        userArray.add(new User("stuffed sticky rice balls: Bánh trôi"));
+        userArray.add(new User("soya cake: Bánh đậu"));
+        userArray.add(new User("steamed wheat flour cake: Bánh bao"));
+        userArray.add(new User("pancako: Bánh xèo"));
+        userArray.add(new User("stuffed sticky rice cake: Bánh chưng"));
+    }
+
+    public void InitCookTool()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI DỤNG CỤ LÀM BẾP");
+        userArray.add(new User("Apron: tạp dề"));
+        userArray.add(new User("baking pan/ baking sheet: khay nướng bánh"));
+        userArray.add(new User("barbecue grill: vỉ nướng"));
+        userArray.add(new User("blender: máy xay sinh tố"));
+        userArray.add(new User("charcoal grill: lò nướng bằng than"));
+        userArray.add(new User("cheese cloth: vải lọc"));
+        userArray.add(new User("coffee maker: máy pha cà phê"));
+        userArray.add(new User("cookbook: sách hướng dẫn nấu ăn"));
+        userArray.add(new User("cutlery: bộ dao kéo"));
+        userArray.add(new User("cutting board: cái thớt"));
+        userArray.add(new User("egg beater: máy đánh trứng"));
+        userArray.add(new User("fondue pot: nồi lẩu"));
+        userArray.add(new User("fork: nĩa"));
+        userArray.add(new User("frying pan: chảo rán"));
+        userArray.add(new User("grater: đồ bào, mài"));
+        userArray.add(new User("griddle: vỉ nướng"));
+        userArray.add(new User("grill pan: chảo nướng"));
+        userArray.add(new User("grinder: cối xay"));
+        userArray.add(new User("ice bucket: xô đựng đá"));
+        userArray.add(new User("juicer: máy ép trái cây"));
+        userArray.add(new User("Kettle: ấm nước"));
+        userArray.add(new User("knife: dao"));
+        userArray.add(new User("Ladle: muôi, vá"));
+        userArray.add(new User("lid: nắp"));
+        userArray.add(new User("microwave oven: lò vi sóng"));
+        userArray.add(new User("mortar and pestle: cối và chày"));
+        userArray.add(new User("pizza cutter: dao cắt bánh pizza"));
+        userArray.add(new User("pizza stone: khay đặt bánh pizza"));
+        userArray.add(new User("platter: đĩa"));
+        userArray.add(new User("popcorn popper: máy làm bắp rang"));
+        userArray.add(new User("pot: bình, hũ, ấm, vại…"));
+        userArray.add(new User("pot holder: găng tay lót nồi"));
+        userArray.add(new User("pressure cooker: nồi áp suất"));
+        userArray.add(new User("Ramekin: bát nhỏ đựng nước chấm"));
+        userArray.add(new User("refrigerator: tủ lạnh"));
+        userArray.add(new User("rice cooker: nồi cơm điện"));
+        userArray.add(new User("roaster/ roasting pan: lò quay"));
+        userArray.add(new User("skewer: cây xiên thịt"));
+        userArray.add(new User("steamer: nồi hấp cách thủy"));
+        userArray.add(new User("stockpot: nồi lòng sâu"));
+        userArray.add(new User("stove: bếp"));
+        userArray.add(new User("teakettle: ấm trà"));
+        userArray.add(new User("toaster: máy nướng bánh"));
+        userArray.add(new User("Utensils: đồ dùng nhà bếp"));
+        userArray.add(new User("water filter: máy lọc nước"));
+        userArray.add(new User("yogurt maker: máy làm sữa chua"));
+    }
+
+    public void InitCookingType()
+    {
+        getSupportActionBar().setTitle("CÁC KIỂU NẤU.");
+        userArray.add(new User("Kho : cook with sauce"));
+        userArray.add(new User("Nướng : grill"));
+        userArray.add(new User("Quay : roast"));
+        userArray.add(new User("Rán ,chiên : fry"));
+        userArray.add(new User("Xào ,áp chảo : Saute"));
+        userArray.add(new User("Hầm, ninh : stew"));
+        userArray.add(new User("Hấp : steam"));
+        userArray.add(new User("Nộm: Sweet and sour salad"));
+    }
+
+    public void InitCookingSpices()
+    {
+        getSupportActionBar().setTitle("CÁC LOẠI GIA VỊ - BỘT");
+        userArray.add(new User("Spices : gia vị"));
+        userArray.add(new User("Chilli sauce: tương ớt"));
+        userArray.add(new User("Chilli powder : ớt bột"));
+        userArray.add(new User("Chilli oil : dầu ớt"));
+        userArray.add(new User("Chilli paste : ớt sa tế"));
+        userArray.add(new User("Cayenne : ớt bột nguyên chất"));
+        userArray.add(new User("curry powder: bột cà ri"));
+        userArray.add(new User("pasta sauce: sốt cà chua nấu mì Ý"));
+        userArray.add(new User("cooking oil: dầu ăn"));
+        userArray.add(new User("olive oil: dầu ô liu"));
+        userArray.add(new User("Sugar : đường"));
+        userArray.add(new User("Salt: muối"));
+        userArray.add(new User("Fish sauce : nước mắm"));
+        userArray.add(new User("Soy sauce: nước tương"));
+        userArray.add(new User("Pepper: hạt tiêu"));
+        userArray.add(new User("Vinegar : giấm"));
     }
 }

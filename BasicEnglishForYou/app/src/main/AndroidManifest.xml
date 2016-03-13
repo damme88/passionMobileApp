@@ -19,16 +19,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".MenuActivity" />
-        <activity android:name=".FirstMeetActivity" />
-        <activity android:name=".TourismActitvity" />
-        <activity android:name=".BuyingActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".PaymentActivity" />
         <activity android:name=".IntroduceActivity" />
         <activity android:name=".IteamListActivity" />
         <activity android:name=".WordsActivity" />
-        <activity android:name=".WordGroupActivity"></activity>
+        <activity android:name=".WordGroupActivity" />
+        <activity android:name=".AllFoodsActivity" />
+        <activity android:name=".GrammarActivity" />
+        <activity android:name=".GramGroupActivity"></activity>
     </application>
 
 </manifest>

@@ -44,7 +44,7 @@ public class UserCustomListView extends ArrayAdapter<User>
             holder.textSentence = (TextView) row.findViewById(R.id.txtView1);
             holder.btn_speak = (Button) row.findViewById(R.id.btnSpeak);
 
-            if (context.getClass() == IteamListActivity.class)
+            if (context.getClass() == GrammarActivity.class)
             {
                 holder.btn_speak.setVisibility(View.INVISIBLE);
             }
@@ -61,27 +61,11 @@ public class UserCustomListView extends ArrayAdapter<User>
             @Override
             public void onClick(View v) {
 
-                if (context.getClass() == BuyingActivity.class) {
-                    BuyingActivity buying_screen = (BuyingActivity) context;
-                    buying_screen.PlayAudio(position);
+                if (context.getClass() == IteamListActivity.class) {
+                    IteamListActivity itemList = (IteamListActivity) context;
+                    itemList.PlayAudio(position);
                 }
 
-                if (context.getClass() == FirstMeetActivity.class) {
-                    FirstMeetActivity fm_screen = (FirstMeetActivity) context;
-                    fm_screen.PlayAudio(position);
-                }
-                if (context.getClass() == HelpActivity.class) {
-                    HelpActivity help_screen = (HelpActivity) context;
-                    help_screen.PlayAudio(position);
-                }
-                if (context.getClass() == TourismActitvity.class) {
-                    TourismActitvity tourScreen = (TourismActitvity) context;
-                    tourScreen.PlayAudio(position);
-                }
-                if (context.getClass() == PaymentActivity.class) {
-                    PaymentActivity paymentScreen = (PaymentActivity) context;
-                    paymentScreen.PlayAudio(position);
-                }
                 if (context.getClass() == WordGroupActivity.class)
                 {
                     WordGroupActivity wordGroupScreen = (WordGroupActivity) context;

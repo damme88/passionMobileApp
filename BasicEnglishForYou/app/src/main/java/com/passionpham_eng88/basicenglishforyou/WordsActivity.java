@@ -26,6 +26,7 @@ public class WordsActivity extends AppCompatActivity {
     public final int SHAPE = 12;
     public final int PARAM = 13;
 
+    public final int ALL_FOOD = 14;
     String[] itemname = {
             "Đồ vật trong nhà",
             "Cơ thể Người",
@@ -38,9 +39,10 @@ public class WordsActivity extends AppCompatActivity {
             "Các Loài Hoa",
             "Nhóm Vật Liệu",
             "Nhóm Kim Loại",
-            "Nhóm Khí Đốt",
+            "Nhóm Vật Chất Khác",
             "Nhóm Hình Học",
-            "Nhóm Đại Lượng"
+            "Nhóm Đại Lượng",
+            "Nhóm Đồ Ăn",
     };
 
     Integer[] imgid={
@@ -58,6 +60,7 @@ public class WordsActivity extends AppCompatActivity {
             R.drawable.wgas,
             R.drawable.wshape,
             R.drawable.wparam,
+            R.drawable.wfoods,
     };
 
     public  void MessageMap()
@@ -130,6 +133,9 @@ public class WordsActivity extends AppCompatActivity {
                     case PARAM:
                         ShowWordGroupScreen(PARAM);
                         break;
+                    case ALL_FOOD:
+                        ShowAllFoodGroup(); // private screen
+                        break;
                     default:
                         break;
                 }
@@ -140,6 +146,12 @@ public class WordsActivity extends AppCompatActivity {
                 Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", type);
                 startActivity(wordGroupScreen);
+            }
+
+            public  void ShowAllFoodGroup()
+            {
+                Intent allFood = new Intent(getApplicationContext(), AllFoodsActivity.class);
+                startActivity(allFood);
             }
         });
     }

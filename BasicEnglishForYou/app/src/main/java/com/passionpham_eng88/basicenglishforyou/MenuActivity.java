@@ -26,20 +26,22 @@ public class MenuActivity extends AppCompatActivity {
     public final int HELP_ME = 2;
     public final int BUYING = 3;
     public final int PAYMENT = 4;
-    public final int INTRODUCEME = 5;
-    public final int FEELING = 6;
-    public final int LIFE_STATE = 7;
+    public final int FEELING = 5;
+    public final int LIFE_STATE = 6;
+    public final int INTRODUCEME = 7;
     public final int BASIC_WORD = 8;
+    public final int BASIC_GRAMMAR = 9;
     String[] itemname = {
             "Lần đầu gặp",
             "Đi du lich",
             "Cần Giúp đỡ",
             "Mua Bán",
             "Thanh Toán",
-            "Giới Thiệu Bản Thân",
             "Mẫu câu: Tôi cảm thấy.",
             "Mẫu câu: Cảm xúc!",
+            "Giới Thiệu Bản Thân",
             "Nhóm Từ Vựng Cơ Bản.",
+            "Ngữ Pháp Cơ Bản",
 
     };
 
@@ -49,10 +51,11 @@ public class MenuActivity extends AppCompatActivity {
             R.drawable.helpme,
             R.drawable.shopping,
             R.drawable.payment,
-            R.drawable.aboutme,
             R.drawable.feeling,
             R.drawable.relationship,
+            R.drawable.aboutme,
             R.drawable.word,
+            R.drawable.gram,
     };
 
     public  void MessageMap()
@@ -90,31 +93,34 @@ public class MenuActivity extends AppCompatActivity {
                 switch (position)
                 {
                     case FIRST_MEET:
-                        ShowFirstMeetScreen();
+                        ShowItemList(FIRST_MEET);
                         break;
                     case TOURISM:
-                        ShowTourismScreen();
+                        ShowItemList(TOURISM);
                         break;
                     case BUYING:
-                        ShowBuyingScreen();
+                        ShowItemList(BUYING);
                         break;
                     case HELP_ME:
-                        ShowHelpMeScreen();
+                        ShowItemList(HELP_ME);
                         break;
                     case PAYMENT:
-                        ShowPaymentScreen();
+                        ShowItemList(PAYMENT);
+                        break;
+                    case FEELING:
+                        ShowItemList(FEELING);
+                        break;
+                    case LIFE_STATE:
+                        ShowItemList(LIFE_STATE);
                         break;
                     case INTRODUCEME:
                         ShowIntroduceMe();
                         break;
-                    case FEELING:
-                        ShowFeelingScreen();
-                        break;
-                    case LIFE_STATE:
-                        ShowRelationShipScreen();
-                        break;
                     case BASIC_WORD:
                         ShowMenuBasicWord();
+                        break;
+                    case BASIC_GRAMMAR:
+                        ShowGrammarScreen();
                         break;
                     default:
                         break;
@@ -123,31 +129,11 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
-    public void ShowFirstMeetScreen()
+    public void ShowItemList(int type)
     {
-        Intent firstMeetScreen = new Intent(getApplicationContext(), FirstMeetActivity.class);
-        startActivity(firstMeetScreen);
-    }
-
-    public void ShowTourismScreen()
-    {
-        Intent TourScreen = new Intent(getApplicationContext(), TourismActitvity.class);
-        startActivity(TourScreen);
-    }
-    public  void ShowBuyingScreen()
-    {
-        Intent buyingScreen = new Intent(getApplicationContext(), BuyingActivity.class);
-        startActivity(buyingScreen);
-    }
-    public void ShowHelpMeScreen()
-    {
-        Intent helpScreen = new Intent(getApplicationContext(), HelpActivity.class);
-        startActivity(helpScreen);
-    }
-    public void ShowPaymentScreen()
-    {
-        Intent paymentScreen = new Intent(getApplicationContext(), PaymentActivity.class);
-        startActivity(paymentScreen);
+        Intent itemListScreen = new Intent(getApplicationContext(), IteamListActivity.class);
+        itemListScreen.putExtra("Type", type);
+        startActivity(itemListScreen);
     }
     public void ShowIntroduceMe()
     {
@@ -155,24 +141,15 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(introduceScreen);
     }
 
-    public void ShowFeelingScreen()
-    {
-        Intent itemListScreen = new Intent(getApplicationContext(), IteamListActivity.class);
-        int type = 0;
-        itemListScreen.putExtra("Type", type);
-        startActivity(itemListScreen);
-    }
-
-    public void ShowRelationShipScreen()
-    {
-        Intent itemListScreen = new Intent(getApplicationContext(), IteamListActivity.class);
-        int type = 1;
-        itemListScreen.putExtra("Type", type);
-        startActivity(itemListScreen);
-    }
     public void ShowMenuBasicWord()
     {
         Intent wordScreen = new Intent(getApplicationContext(), WordsActivity.class);
         startActivity(wordScreen);
+    }
+
+    public void ShowGrammarScreen()
+    {
+        Intent gramamrScreen = new Intent(getApplicationContext(), GrammarActivity.class);
+        startActivity(gramamrScreen);
     }
 }
