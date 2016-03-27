@@ -27,13 +27,13 @@ public class IteamListActivity extends AppCompatActivity {
     ArrayList<Integer> audio_list = new ArrayList<Integer>();
     MediaPlayer audio_player = new MediaPlayer();
 
-    public final int FIRST_MEET = 0;
-    public final int TOURISM = 1;
-    public final int HELP_ME = 2;
-    public final int BUYING = 3;
-    public final int PAYMENT = 4;
-    public final int FEELING = 5;
-    public final int LIFE_STATE = 6;
+    public final int FIRST_MEET = 2;
+    public final int TOURISM = 3;
+    public final int HELP_ME = 4;
+    public final int BUYING = 5;
+    public final int PAYMENT = 6;
+    public final int FEELING = 7;
+    public final int LIFE_STATE = 8;
 
     public void MessageMap()
     {
@@ -86,6 +86,10 @@ public class IteamListActivity extends AppCompatActivity {
     {
         if (position < audio_list.size())
         {
+            if (audio_player.isPlaying())
+            {
+                audio_player.stop();
+            }
             audio_player = MediaPlayer.create(getApplicationContext(), audio_list.get(position));
             audio_player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override

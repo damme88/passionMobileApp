@@ -26,20 +26,20 @@ public class WordGroupActivity extends AppCompatActivity {
     ArrayList<Integer> audio_list = new ArrayList<Integer>();
     MediaPlayer audio_player = new MediaPlayer();
 
-    public final int HOME = 0;
-    public final int HUMAN = 1;
-    public final int JOB = 2;
-    public final int FISH = 3;
-    public final int BIRD = 4;
-    public final int INSECT = 5;
-    public final int CATTLE = 6;
-    public final int WILD_ANIMAL = 7;
-    public final int FLOWERS = 8;
-    public final int MATERIAL = 9;
-    public final int METAL = 10;
-    public final int GAS = 11;
-    public final int SHAPE = 12;
-    public final int PARAM = 13;
+    public final int HOME = 1;
+    public final int HUMAN = 2;
+    public final int JOB = 3;
+    public final int FISH = 4;
+    public final int BIRD = 5;
+    public final int INSECT = 6;
+    public final int CATTLE = 7;
+    public final int WILD_ANIMAL = 8;
+    public final int FLOWERS = 9;
+    public final int MATERIAL = 10;
+    public final int METAL = 11;
+    public final int GAS = 12;
+    public final int SHAPE = 13;
+    public final int PARAM = 14;
 
     public final int FOODS_MEET = 20;
     public final int FOODS_MILK = 21;
@@ -198,6 +198,11 @@ public class WordGroupActivity extends AppCompatActivity {
     {
         if (position < audio_list.size())
         {
+            if (audio_player.isPlaying() == true)
+            {
+                audio_player.stop();
+                audio_player.release();
+            }
             audio_player = MediaPlayer.create(getApplicationContext(), audio_list.get(position));
             audio_player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
@@ -206,10 +211,7 @@ public class WordGroupActivity extends AppCompatActivity {
                     mp.stop();
                 }
             });
-            if (audio_player.isPlaying() == false)
-            {
-                audio_player.start();
-            }
+            audio_player.start();
         }
     }
     @Override
@@ -908,12 +910,6 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Milk       : Sữa"));
         userArray.add(new User("Sour cream : Kem chua"));
         userArray.add(new User("Yoghurt    : Sữa chua"));
-        userArray.add(new User("Beer       : Bia"));
-        userArray.add(new User("Bitter     : Rượu Đắng"));
-        userArray.add(new User("Wine       : Rượu"));
-        userArray.add(new User("Champagne  : Sâm banh"));
-        userArray.add(new User("Alcohol    : Rượu bia nói chung"));
-        userArray.add(new User("Spirits    : Rượu mạnh"));
     }
     public void InitFoodFruits()
     {
@@ -989,6 +985,10 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("cocoa: ca cao"));
         userArray.add(new User("beer: Bia"));
         userArray.add(new User("Wine: Rượu"));
+        userArray.add(new User("Bitter     : Rượu Đắng"));
+        userArray.add(new User("Champagne  : Sâm banh"));
+        userArray.add(new User("Alcohol    : Rượu bia nói chung"));
+        userArray.add(new User("Spirits    : Rượu mạnh"));
     }
 
     public void InitCake()
@@ -1062,14 +1062,14 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitCookingType()
     {
         getSupportActionBar().setTitle("CÁC KIỂU NẤU.");
-        userArray.add(new User("Kho : cook with sauce"));
-        userArray.add(new User("Nướng : grill"));
-        userArray.add(new User("Quay : roast"));
-        userArray.add(new User("Rán ,chiên : fry"));
-        userArray.add(new User("Xào ,áp chảo : Saute"));
-        userArray.add(new User("Hầm, ninh : stew"));
-        userArray.add(new User("Hấp : steam"));
-        userArray.add(new User("Nộm: Sweet and sour salad"));
+        userArray.add(new User("cook with sauce: Kho"));
+        userArray.add(new User("grill: Nướng"));
+        userArray.add(new User("roast: Quay"));
+        userArray.add(new User("fry: Rán ,chiên"));
+        userArray.add(new User("Saute: Xào ,áp chảo"));
+        userArray.add(new User("stew: Hầm, ninh"));
+        userArray.add(new User("steam: Hấp"));
+        userArray.add(new User("Sweet and sour salad: Nộm"));
     }
 
     public void InitCookingSpices()

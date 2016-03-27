@@ -11,23 +11,25 @@ import android.widget.ListView;
 public class WordsActivity extends AppCompatActivity {
     Button btn_back;
     ListView listword;
-    public final int HOME = 0;
-    public final int HUMAN = 1;
-    public final int JOB = 2;
-    public final int FISH = 3;
-    public final int BIRD = 4;
-    public final int INSECT = 5;
-    public final int CATTLE = 6;
-    public final int WILD_ANIMAL = 7;
-    public final int FLOWERS = 8;
-    public final int MATERIAL = 9;
-    public final int METAL = 10;
-    public final int GAS = 11;
-    public final int SHAPE = 12;
-    public final int PARAM = 13;
+    public final int ALL_FOOD = 0;
+    public final int HOME = 1;
+    public final int HUMAN = 2;
+    public final int JOB = 3;
+    public final int FISH = 4;
+    public final int BIRD = 5;
+    public final int INSECT = 6;
+    public final int CATTLE = 7;
+    public final int WILD_ANIMAL = 8;
+    public final int FLOWERS = 9;
+    public final int MATERIAL = 10;
+    public final int METAL = 11;
+    public final int GAS = 12;
+    public final int SHAPE = 13;
+    public final int PARAM = 14;
 
-    public final int ALL_FOOD = 14;
+
     String[] itemname = {
+            "Nhóm Đồ Ăn",
             "Đồ vật trong nhà",
             "Cơ thể Người",
             "Nghề nghiệp",
@@ -42,10 +44,10 @@ public class WordsActivity extends AppCompatActivity {
             "Nhóm Vật Chất Khác",
             "Nhóm Hình Học",
             "Nhóm Đại Lượng",
-            "Nhóm Đồ Ăn",
     };
 
     Integer[] imgid={
+            R.drawable.wfoods,
             R.drawable.home,
             R.drawable.body,
             R.drawable.job,
@@ -60,7 +62,7 @@ public class WordsActivity extends AppCompatActivity {
             R.drawable.wgas,
             R.drawable.wshape,
             R.drawable.wparam,
-            R.drawable.wfoods,
+
     };
 
     public  void MessageMap()
@@ -91,6 +93,9 @@ public class WordsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case ALL_FOOD:
+                        ShowAllFoodGroup(); // private screen
+                        break;
                     case HOME:
                         ShowWordGroupScreen(HOME);
                         break;
@@ -132,9 +137,6 @@ public class WordsActivity extends AppCompatActivity {
                         break;
                     case PARAM:
                         ShowWordGroupScreen(PARAM);
-                        break;
-                    case ALL_FOOD:
-                        ShowAllFoodGroup(); // private screen
                         break;
                     default:
                         break;

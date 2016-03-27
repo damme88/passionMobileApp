@@ -99,4 +99,99 @@
         android:layout_alignBottom="@+id/imgSpices"
         android:layout_alignLeft="@+id/imgCake"
         android:layout_alignStart="@+id/imgCake" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="     Thịt"
+        android:id="@+id/textView"
+        android:layout_above="@+id/imgMilk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imgFood"
+        android:layout_alignEnd="@+id/imgFood" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Bơ, Sữa"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imgMilk"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trái Cây"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/imgFruits"
+        android:layout_alignLeft="@+id/imgFruits"
+        android:layout_alignStart="@+id/imgFruits" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rau,Củ"
+        android:id="@+id/ủ"
+        android:layout_above="@+id/imgVegetable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Loại Bánh"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/imgCake"
+        android:layout_alignLeft="@+id/imgCake"
+        android:layout_alignStart="@+id/imgCake" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Đồ uống"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/imgDrinking"
+        android:layout_alignEnd="@+id/imgDrinking" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Đồ Nấu"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/imgToolCooking"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imgToolCooking"
+        android:layout_alignEnd="@+id/imgToolCooking" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gia Vị"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignLeft="@+id/imgSpices"
+        android:layout_alignStart="@+id/imgSpices" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kiểu Nấu"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignLeft="@+id/imgCookType"
+        android:layout_alignStart="@+id/imgCookType" />
 </RelativeLayout>

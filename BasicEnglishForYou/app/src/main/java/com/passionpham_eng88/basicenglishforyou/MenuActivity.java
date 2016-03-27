@@ -21,31 +21,32 @@ public class MenuActivity extends AppCompatActivity {
     Button btn_back;
     ListView list;
 
-    public final int FIRST_MEET = 0;
-    public final int TOURISM = 1;
-    public final int HELP_ME = 2;
-    public final int BUYING = 3;
-    public final int PAYMENT = 4;
-    public final int FEELING = 5;
-    public final int LIFE_STATE = 6;
-    public final int INTRODUCEME = 7;
-    public final int BASIC_WORD = 8;
-    public final int BASIC_GRAMMAR = 9;
+    public final int BASIC_WORD = 0;
+    public final int BASIC_GRAMMAR = 1;
+    public final int FIRST_MEET = 2;
+    public final int TOURISM = 3;
+    public final int HELP_ME =4;
+    public final int BUYING = 5;
+    public final int PAYMENT = 6;
+    public final int FEELING = 7;
+    public final int LIFE_STATE = 8;
+    public final int INTRODUCEME = 9;
     String[] itemname = {
+            "Nhóm Từ Vựng Cơ Bản.",
+            "Ngữ Pháp Cơ Bản",
             "Lần đầu gặp",
             "Đi du lich",
-            "Cần Giúp đỡ",
+            "Cần Giúp Đỡ",
             "Mua Bán",
             "Thanh Toán",
             "Mẫu câu: Tôi cảm thấy.",
             "Mẫu câu: Cảm xúc!",
             "Giới Thiệu Bản Thân",
-            "Nhóm Từ Vựng Cơ Bản.",
-            "Ngữ Pháp Cơ Bản",
-
     };
 
     Integer[] imgid={
+            R.drawable.word,
+            R.drawable.gram,
             R.drawable.fistmeet,
             R.drawable.tourism,
             R.drawable.helpme,
@@ -54,8 +55,6 @@ public class MenuActivity extends AppCompatActivity {
             R.drawable.feeling,
             R.drawable.relationship,
             R.drawable.aboutme,
-            R.drawable.word,
-            R.drawable.gram,
     };
 
     public  void MessageMap()
@@ -92,6 +91,12 @@ public class MenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position)
                 {
+                    case BASIC_WORD:
+                        ShowMenuBasicWord();
+                        break;
+                    case BASIC_GRAMMAR:
+                        ShowGrammarScreen();
+                        break;
                     case FIRST_MEET:
                         ShowItemList(FIRST_MEET);
                         break;
@@ -115,12 +120,6 @@ public class MenuActivity extends AppCompatActivity {
                         break;
                     case INTRODUCEME:
                         ShowIntroduceMe();
-                        break;
-                    case BASIC_WORD:
-                        ShowMenuBasicWord();
-                        break;
-                    case BASIC_GRAMMAR:
-                        ShowGrammarScreen();
                         break;
                     default:
                         break;
