@@ -899,6 +899,19 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Duck        : Thịt Vịt"));
         userArray.add(new User("Sausages    : Xúc xíc"));
 
+        audio_list.add(R.raw.foliver);
+        audio_list.add(R.raw.foham);
+        audio_list.add(R.raw.fopate);
+        audio_list.add(R.raw.foveal);
+        audio_list.add(R.raw.fobeef);
+        audio_list.add(R.raw.folamb);
+        audio_list.add(R.raw.fochicken);
+        audio_list.add(R.raw.foturkey);
+        audio_list.add(R.raw.fopork);
+        audio_list.add(R.raw.fobacon);
+        audio_list.add(R.raw.focookedmeat);
+        audio_list.add(R.raw.fosausages);
+
     }
     public void InitFoodMilk()
     {
@@ -910,6 +923,14 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Milk       : Sữa"));
         userArray.add(new User("Sour cream : Kem chua"));
         userArray.add(new User("Yoghurt    : Sữa chua"));
+
+        audio_list.add(R.raw.dributter);
+        audio_list.add(R.raw.dricream);
+        audio_list.add(R.raw.dricheese);
+        audio_list.add(R.raw.driegg);
+        audio_list.add(R.raw.drimilk);
+        audio_list.add(R.raw.drisourcream);
+        audio_list.add(R.raw.driyoghurt);
     }
     public void InitFoodFruits()
     {
@@ -936,7 +957,6 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Raspberry 	: Quả mâm xôi đỏ"));
         userArray.add(new User("Blackberry  : Quả mâm xôi đen"));
         userArray.add(new User("Strawberry 	: Quả Dâu"));
-
     }
 
     public void InitVegetable()
@@ -989,6 +1009,25 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("Champagne  : Sâm banh"));
         userArray.add(new User("Alcohol    : Rượu bia nói chung"));
         userArray.add(new User("Spirits    : Rượu mạnh"));
+
+        audio_list.add(R.raw.tomineralwater);
+        audio_list.add(R.raw.tofruitjuice);
+        audio_list.add(R.raw.toorangejuice);
+        audio_list.add(R.raw.topineapplejuice);
+        audio_list.add(R.raw.totomatojuice);
+        audio_list.add(R.raw.tosmoothies);
+        audio_list.add(R.raw.tolemonade);
+        audio_list.add(R.raw.tosquash);
+        audio_list.add(R.raw.toicedtea);
+        audio_list.add(R.raw.tootea);
+        audio_list.add(R.raw.tocoffee);
+        audio_list.add(R.raw.tococoa);
+        audio_list.add(R.raw.tobeer);
+        audio_list.add(R.raw.towine);
+        audio_list.add(R.raw.tobitter);
+        audio_list.add(R.raw.tochampagne);
+        audio_list.add(R.raw.toalcohol);
+        audio_list.add(R.raw.tospirits);
     }
 
     public void InitCake()
@@ -1006,18 +1045,30 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("steamed wheat flour cake: Bánh bao"));
         userArray.add(new User("pancako: Bánh xèo"));
         userArray.add(new User("stuffed sticky rice cake: Bánh chưng"));
+
+        audio_list.add(R.raw.ckbread);
+        audio_list.add(R.raw.ckquickbread);
+        audio_list.add(R.raw.ckstuffedpancake);
+        audio_list.add(R.raw.ckroundstickyricecake);
+        audio_list.add(R.raw.ckgirdlecake);
+        audio_list.add(R.raw.ckshrimpinbatter);
+        audio_list.add(R.raw.ckyoungricecake);
+        audio_list.add(R.raw.ckstuffedstickyriceballs);
+        audio_list.add(R.raw.cksoyacake);
+        audio_list.add(R.raw.cksteamedwheatflourcake);
+        audio_list.add(R.raw.ckpancako);
+        audio_list.add(R.raw.ckstuffedpancake);
     }
 
     public void InitCookTool()
     {
         getSupportActionBar().setTitle("CÁC LOẠI DỤNG CỤ LÀM BẾP");
-        userArray.add(new User("Apron: tạp dề"));
+        userArray.add(new User("apron: tạp dề"));
         userArray.add(new User("baking pan/ baking sheet: khay nướng bánh"));
         userArray.add(new User("barbecue grill: vỉ nướng"));
         userArray.add(new User("blender: máy xay sinh tố"));
         userArray.add(new User("charcoal grill: lò nướng bằng than"));
         userArray.add(new User("cheese cloth: vải lọc"));
-        userArray.add(new User("coffee maker: máy pha cà phê"));
         userArray.add(new User("cookbook: sách hướng dẫn nấu ăn"));
         userArray.add(new User("cutlery: bộ dao kéo"));
         userArray.add(new User("cutting board: cái thớt"));
@@ -1031,32 +1082,59 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("grinder: cối xay"));
         userArray.add(new User("ice bucket: xô đựng đá"));
         userArray.add(new User("juicer: máy ép trái cây"));
-        userArray.add(new User("Kettle: ấm nước"));
+        userArray.add(new User("kettle: ấm nước"));
         userArray.add(new User("knife: dao"));
-        userArray.add(new User("Ladle: muôi, vá"));
+        userArray.add(new User("ladle: muôi, vá"));
         userArray.add(new User("lid: nắp"));
         userArray.add(new User("microwave oven: lò vi sóng"));
-        userArray.add(new User("mortar and pestle: cối và chày"));
-        userArray.add(new User("pizza cutter: dao cắt bánh pizza"));
-        userArray.add(new User("pizza stone: khay đặt bánh pizza"));
         userArray.add(new User("platter: đĩa"));
-        userArray.add(new User("popcorn popper: máy làm bắp rang"));
-        userArray.add(new User("pot: bình, hũ, ấm, vại…"));
         userArray.add(new User("pot holder: găng tay lót nồi"));
         userArray.add(new User("pressure cooker: nồi áp suất"));
-        userArray.add(new User("Ramekin: bát nhỏ đựng nước chấm"));
         userArray.add(new User("refrigerator: tủ lạnh"));
         userArray.add(new User("rice cooker: nồi cơm điện"));
         userArray.add(new User("roaster/ roasting pan: lò quay"));
         userArray.add(new User("skewer: cây xiên thịt"));
-        userArray.add(new User("steamer: nồi hấp cách thủy"));
-        userArray.add(new User("stockpot: nồi lòng sâu"));
         userArray.add(new User("stove: bếp"));
         userArray.add(new User("teakettle: ấm trà"));
         userArray.add(new User("toaster: máy nướng bánh"));
-        userArray.add(new User("Utensils: đồ dùng nhà bếp"));
+        userArray.add(new User("utensils: đồ dùng nhà bếp"));
         userArray.add(new User("water filter: máy lọc nước"));
-        userArray.add(new User("yogurt maker: máy làm sữa chua"));
+
+        audio_list.add(R.raw.tlapron);
+        audio_list.add(R.raw.tlbakingpan);
+        audio_list.add(R.raw.tlbarbecuegrill);
+        audio_list.add(R.raw.tlblender);
+        audio_list.add(R.raw.tlcharcoalgrill);
+        audio_list.add(R.raw.tlcheesecloth);
+        audio_list.add(R.raw.tlcookbook);
+        audio_list.add(R.raw.tlcutlery);
+        audio_list.add(R.raw.tlcuttingboard);
+        audio_list.add(R.raw.tleggbeater);
+        audio_list.add(R.raw.tlfonduepot);
+        audio_list.add(R.raw.tlfork);
+        audio_list.add(R.raw.tlfryingpan);
+        audio_list.add(R.raw.tlgrater);
+        audio_list.add(R.raw.tlgriddle);
+        audio_list.add(R.raw.tlgrillpan);
+        audio_list.add(R.raw.tlgrinder);
+        audio_list.add(R.raw.tlicebucket);
+        audio_list.add(R.raw.tljuicer);
+        audio_list.add(R.raw.tlkettle);
+        audio_list.add(R.raw.tlknife);
+        audio_list.add(R.raw.tlladle);
+        audio_list.add(R.raw.tllid);
+        audio_list.add(R.raw.tlmicrowaveoven);
+        audio_list.add(R.raw.tlplatter);
+        audio_list.add(R.raw.tlpotholder);
+        audio_list.add(R.raw.tlpressurecooker);
+        audio_list.add(R.raw.tlrefrigerator);
+        audio_list.add(R.raw.tlricecooker);
+        audio_list.add(R.raw.tlroaster);
+        audio_list.add(R.raw.tlskewer);
+        audio_list.add(R.raw.tlstove);
+        audio_list.add(R.raw.tltoaster);
+        audio_list.add(R.raw.tlutensils);
+        audio_list.add(R.raw.tlwaterfilter);
     }
 
     public void InitCookingType()
@@ -1070,26 +1148,52 @@ public class WordGroupActivity extends AppCompatActivity {
         userArray.add(new User("stew: Hầm, ninh"));
         userArray.add(new User("steam: Hấp"));
         userArray.add(new User("Sweet and sour salad: Nộm"));
+
+        audio_list.add(R.raw.ctcookwithsauce);
+        audio_list.add(R.raw.ctgrill);
+        audio_list.add(R.raw.ctroast);
+        audio_list.add(R.raw.ctfry);
+        audio_list.add(R.raw.ctsaute);
+        audio_list.add(R.raw.ctstew);
+        audio_list.add(R.raw.ctsteam);
+        audio_list.add(R.raw.ctsweetandsoursalad);
     }
 
     public void InitCookingSpices()
     {
         getSupportActionBar().setTitle("CÁC LOẠI GIA VỊ - BỘT");
-        userArray.add(new User("Spices : gia vị"));
-        userArray.add(new User("Chilli sauce: tương ớt"));
-        userArray.add(new User("Chilli powder : ớt bột"));
-        userArray.add(new User("Chilli oil : dầu ớt"));
-        userArray.add(new User("Chilli paste : ớt sa tế"));
-        userArray.add(new User("Cayenne : ớt bột nguyên chất"));
-        userArray.add(new User("curry powder: bột cà ri"));
-        userArray.add(new User("pasta sauce: sốt cà chua nấu mì Ý"));
-        userArray.add(new User("cooking oil: dầu ăn"));
-        userArray.add(new User("olive oil: dầu ô liu"));
-        userArray.add(new User("Sugar : đường"));
-        userArray.add(new User("Salt: muối"));
-        userArray.add(new User("Fish sauce : nước mắm"));
-        userArray.add(new User("Soy sauce: nước tương"));
-        userArray.add(new User("Pepper: hạt tiêu"));
-        userArray.add(new User("Vinegar : giấm"));
+        userArray.add(new User("Spices       : gia vị"));
+        userArray.add(new User("Chilli sauce : tương ớt"));
+        userArray.add(new User("Chili powder : ớt bột"));
+        userArray.add(new User("Chili oil    : dầu ớt"));
+        userArray.add(new User("Chili paste  : ớt sa tế"));
+        userArray.add(new User("curry powder : bột cà ri"));
+        userArray.add(new User("pasta sauce  : sốt cà chua nấu mì Ý"));
+        userArray.add(new User("cooking oil  : dầu ăn"));
+        userArray.add(new User("olive oil    : dầu ô liu"));
+        userArray.add(new User("Sugar        : đường"));
+        userArray.add(new User("Salt         : muối"));
+        userArray.add(new User("Fish sauce   : nước mắm"));
+        userArray.add(new User("Soy sauce    : nước tương"));
+        userArray.add(new User("Pepper       : hạt tiêu"));
+        userArray.add(new User("Vinegar      : giấm"));
+
+        audio_list.add(R.raw.spspices);
+        audio_list.add(R.raw.spchillisauce);
+        audio_list.add(R.raw.spchilipowder);
+        audio_list.add(R.raw.spchilioil);
+        audio_list.add(R.raw.spchilipaste);
+        audio_list.add(R.raw.spcurrypowder);
+        audio_list.add(R.raw.sppastasauce);
+        audio_list.add(R.raw.spcookingoil);
+
+        audio_list.add(R.raw.spoliveoil);
+        audio_list.add(R.raw.spsugar);
+        audio_list.add(R.raw.spsalt);
+
+        audio_list.add(R.raw.spfishsauce);
+        audio_list.add(R.raw.spsoysauce);
+        audio_list.add(R.raw.sppepper);
+        audio_list.add(R.raw.spvinegar);
     }
 }
