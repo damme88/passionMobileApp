@@ -52,6 +52,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAffinity();
                 Intent wgWord = new Intent(getApplicationContext(), WordsActivity.class);
                 startActivity(wgWord);
             }
@@ -60,7 +61,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_MEET);
                 startActivity(wordGroupScreen);
             }
@@ -69,7 +70,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgMilk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_MILK);
                 startActivity(wordGroupScreen);
             }
@@ -78,7 +79,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgFruits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_FRUITS);
                 startActivity(wordGroupScreen);
             }
@@ -87,7 +88,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgVeget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_VEGETABLE);
                 startActivity(wordGroupScreen);
             }
@@ -96,7 +97,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgDrinking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_DRINKING);
                 startActivity(wordGroupScreen);
             }
@@ -105,7 +106,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgCake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", FOODS_CAKE);
                 startActivity(wordGroupScreen);
             }
@@ -114,7 +115,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgCookTool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", COOK_TOOL);
                 startActivity(wordGroupScreen);
             }
@@ -123,7 +124,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgSpices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", COOK_SPICES);
                 startActivity(wordGroupScreen);
             }
@@ -132,7 +133,7 @@ public class AllFoodsActivity extends AppCompatActivity {
         imgCookType.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(AllFoodsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", COOK_TYPE);
                 startActivity(wordGroupScreen);
             }

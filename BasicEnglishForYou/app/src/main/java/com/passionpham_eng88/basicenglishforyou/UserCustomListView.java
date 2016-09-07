@@ -48,6 +48,10 @@ public class UserCustomListView extends ArrayAdapter<User>
             {
                 holder.btn_speak.setVisibility(View.INVISIBLE);
             }
+            if (context.getClass() == EnglishForKidActivity.class)
+            {
+                holder.btn_speak.setVisibility(View.INVISIBLE);
+            }
             row.setTag(holder);
         } else {
             holder = (UserHolder) row.getTag();
@@ -70,6 +74,12 @@ public class UserCustomListView extends ArrayAdapter<User>
                 {
                     WordGroupActivity wordGroupScreen = (WordGroupActivity) context;
                     wordGroupScreen.PlayAudio(position);
+                }
+
+                if (context.getClass() == ListeningActivity.class)
+                {
+                    ListeningActivity listenScreen = (ListeningActivity) context;
+                    listenScreen.PlayAudio(position);
                 }
             }
         });

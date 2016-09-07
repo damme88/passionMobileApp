@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id"
-        android:layout_above="@+id/menuBack"
+        android:layout_above="@+id/liBack"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
     </com.google.android.gms.ads.AdView>

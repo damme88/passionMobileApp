@@ -275,6 +275,7 @@ public class WordGroupActivity extends AppCompatActivity {
                     type  = extras.getInt("Type");
                 }
 
+                finishAffinity();
                 Intent wordGroup = new Intent(getApplicationContext(), WordsActivity.class);
                 Intent foodGroup = new Intent(getApplicationContext(), AllFoodsActivity.class);
                 if (type >= FOODS_MEET && type <= COOK_TYPE)
@@ -322,31 +323,31 @@ public class WordGroupActivity extends AppCompatActivity {
     public void Home()
     {
         getSupportActionBar().setTitle("ĐỒ VẬT TRONG NHÀ");
-        userArray.add(new User("Calendar : Lịch"));
-        userArray.add(new User("Chair    : Ghế"));
-        userArray.add(new User("Clock    : Đồng hồ treo tường"));
-        userArray.add(new User("Cup      : Cái chén"));
-        userArray.add(new User("Curtain  : Rèm cửa"));
-        userArray.add(new User("Door     : Cưa ra vào"));
-        userArray.add(new User("Fan      : Quật"));
-        userArray.add(new User("Fence    : Hàng rào"));
-        userArray.add(new User("Flat     : Căn hộ"));
-        userArray.add(new User("Floor    : Sàn nhà"));
-        userArray.add(new User("Garden   : Vườn"));
-        userArray.add(new User("House    : Nhà"));
-        userArray.add(new User("Lamp     : Cái đèn"));
-        userArray.add(new User("Pillow   : Cái gối"));
-        userArray.add(new User("Rung     : Thảm nhà"));
-        userArray.add(new User("Shelf    : Kệ sách"));
-        userArray.add(new User("Sink     : Bồn rửa bát"));
-        userArray.add(new User("Sofa     : Ghê sofa"));
-        userArray.add(new User("Stair    : Cầu thang"));
-        userArray.add(new User("Table    : Cái bàn"));
-        userArray.add(new User("Terrace  : Sân thượng"));
-        userArray.add(new User("Toilet   : Nhà vệ sinh"));
-        userArray.add(new User("Towel    : Khăn tắm"));
-        userArray.add(new User("Wall     : Bức tường"));
-        userArray.add(new User("Window   : Cửa sổ"));
+        userArray.add(new User("Calendar\nLịch"));
+        userArray.add(new User("Chair\nGhế"));
+        userArray.add(new User("Clock\nĐồng hồ treo tường"));
+        userArray.add(new User("Cup\nCái chén"));
+        userArray.add(new User("Curtain\nRèm cửa"));
+        userArray.add(new User("Door\nCưa ra vào"));
+        userArray.add(new User("Fan\nQuật"));
+        userArray.add(new User("Fence\nHàng rào"));
+        userArray.add(new User("Flat\nCăn hộ"));
+        userArray.add(new User("Floor\nSàn nhà"));
+        userArray.add(new User("Garden\nVườn"));
+        userArray.add(new User("House\nNhà"));
+        userArray.add(new User("Lamp\nCái đèn"));
+        userArray.add(new User("Pillow\nCái gối"));
+        userArray.add(new User("Rung\nThảm nhà"));
+        userArray.add(new User("Shelf\nKệ sách"));
+        userArray.add(new User("Sink\nBồn rửa bát"));
+        userArray.add(new User("Sofa\nGhê sofa"));
+        userArray.add(new User("Stair\nCầu thang"));
+        userArray.add(new User("Table\nCái bàn"));
+        userArray.add(new User("Terrace\nSân thượng"));
+        userArray.add(new User("Toilet\nNhà vệ sinh"));
+        userArray.add(new User("Towel\nKhăn tắm"));
+        userArray.add(new User("Wall\nBức tường"));
+        userArray.add(new User("Window\nCửa sổ"));
 
         audio_list.add(R.raw.hmcalendar);
         audio_list.add(R.raw.hmchair);
@@ -377,35 +378,35 @@ public class WordGroupActivity extends AppCompatActivity {
     public void BodyHuman()
     {
         getSupportActionBar().setTitle("CƠ THỂ NGƯỜI");
-        userArray.add(new User("beard : râu"));
-        userArray.add(new User("blood : máu"));
-        userArray.add(new User("body  : cơ thể"));
-        userArray.add(new User("bone  : xương"));
-        userArray.add(new User("bowel : Ruột"));
-        userArray.add(new User("breast : Ngực"));
-        userArray.add(new User("Buttoks: Mông"));
-        userArray.add(new User("Chin   : Cằm"));
-        userArray.add(new User("Ear    : Tai"));
-        userArray.add(new User("Eye	: Mắt"));
-        userArray.add(new User("Face   : Mặt"));
-        userArray.add(new User("Fingger: Ngón tay"));
-        userArray.add(new User("Flesh  : Da - Thịt"));
-        userArray.add(new User("Foot   : Bàn Chân"));
-        userArray.add(new User("Hair   : Tóc"));
-        userArray.add(new User("Hand   : Bàn tay"));
-        userArray.add(new User("Head   : Cái đầu"));
-        userArray.add(new User("Heart  : Trái tim"));
-        userArray.add(new User("Jaw    : Quai hàm"));
-        userArray.add(new User("Lip    : Môi"));
-        userArray.add(new User("Moustache : Râu mép"));
-        userArray.add(new User("Mouth  : Cái miệng"));
-        userArray.add(new User("Nose   : Mũi"));
-        userArray.add(new User("Nostril : lỗi mũi"));
-        userArray.add(new User("Tear    : Nước mắt"));
-        userArray.add(new User("Thigh   : Đùi"));
-        userArray.add(new User("Throat  : Cổ họng"));
-        userArray.add(new User("Tongue  : Lưỡi"));
-        userArray.add(new User("Tooth - Teeth : Răng - Hàm răng"));
+        userArray.add(new User("Beard\nrâu"));
+        userArray.add(new User("Blood\nmáu"));
+        userArray.add(new User("Body\ncơ thể"));
+        userArray.add(new User("Bone\nxương"));
+        userArray.add(new User("Bowel\nRuột"));
+        userArray.add(new User("Breast\nNgực"));
+        userArray.add(new User("Buttoks\nMông"));
+        userArray.add(new User("Chin\nCằm"));
+        userArray.add(new User("Ear\nTai"));
+        userArray.add(new User("Eye\nMắt"));
+        userArray.add(new User("Face\nMặt"));
+        userArray.add(new User("Fingger\nNgón tay"));
+        userArray.add(new User("Flesh\nDa - Thịt"));
+        userArray.add(new User("Foot\nBàn Chân"));
+        userArray.add(new User("Hair\nTóc"));
+        userArray.add(new User("Hand\nBàn tay"));
+        userArray.add(new User("Head\nCái đầu"));
+        userArray.add(new User("Heart\nTrái tim"));
+        userArray.add(new User("Jaw\nQuai hàm"));
+        userArray.add(new User("Lip\nMôi"));
+        userArray.add(new User("Moustache\nRâu mép"));
+        userArray.add(new User("Mouth\nCái miệng"));
+        userArray.add(new User("Nose\nMũi"));
+        userArray.add(new User("Nostril\nlỗi mũi"));
+        userArray.add(new User("Tear\nNước mắt"));
+        userArray.add(new User("Thigh\nĐùi"));
+        userArray.add(new User("Throat\nCổ họng"));
+        userArray.add(new User("Tongue\nLưỡi"));
+        userArray.add(new User("Tooth - Teeth\nRăng - Hàm răng"));
 
         audio_list.add(R.raw.bobeard);
         audio_list.add(R.raw.boblood);
@@ -441,29 +442,27 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitJob()
     {
         getSupportActionBar().setTitle("NGHỀ NGHIỆP");
-        userArray.add(new User("Actor   : Nam diễn viên"));
-        userArray.add(new User("Actress : Nữ diễn viên"));
-        userArray.add(new User("Athlete : Vận động viên"));
-        userArray.add(new User("Chef    : Bếp trưởng"));
-        userArray.add(new User("Fish man : Ngư dân"));
-        //userArray.add(new User("Lady      : Qúy bà"));
-        userArray.add(new User("Librarian : Thủ thư"));
-        userArray.add(new User("Musician  : Nhạc sỹ"));
-        userArray.add(new User("Pilot     : Phi công"));
-        userArray.add(new User("Policeman : Cảnh sát"));
-        userArray.add(new User("Post man  : Người đưa thư"));
-        userArray.add(new User("Queen     : nữ hoàng"));
-        userArray.add(new User("Sales man : Người bán hàng"));
-        userArray.add(new User("Secretary : Thư ký"));
-        userArray.add(new User("Nurse     : y tá"));
-        userArray.add(new User("Programmer : Lập trình viên"));
+        userArray.add(new User("Actor\nNam diễn viên"));
+        userArray.add(new User("Actress\nNữ diễn viên"));
+        userArray.add(new User("Athlete\nVận động viên"));
+        userArray.add(new User("Chef\nBếp trưởng"));
+        userArray.add(new User("Fish man\nNgư dân"));
+        userArray.add(new User("Librarian\nThủ thư"));
+        userArray.add(new User("Musician\nNhạc sỹ"));
+        userArray.add(new User("Pilot\nPhi công"));
+        userArray.add(new User("Policeman\nCảnh sát"));
+        userArray.add(new User("Post man\nNgười đưa thư"));
+        userArray.add(new User("Queen\nnữ hoàng"));
+        userArray.add(new User("Sales man\nNgười bán hàng"));
+        userArray.add(new User("Secretary\nThư ký"));
+        userArray.add(new User("Nurse\ny tá"));
+        userArray.add(new User("Programmer\nLập trình viên"));
 
         audio_list.add(R.raw.joactor);
         audio_list.add(R.raw.joactress);
         audio_list.add(R.raw.joathlete);
         audio_list.add(R.raw.jochef);
         audio_list.add(R.raw.jofishman);
-        //audio_list.add(R.raw.jolady);
         audio_list.add(R.raw.jolibrarian);
         audio_list.add(R.raw.jomusician);
         audio_list.add(R.raw.jopilot);
@@ -478,24 +477,24 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitFish()
     {
         getSupportActionBar().setTitle("CÁC LOÀI CÁ");
-        userArray.add(new User("Octopus     : Bạch tuộc"));
-        userArray.add(new User("Carp        : Cá chép"));
-        userArray.add(new User("Dolphin     : Cá heo"));
-        userArray.add(new User("Shark       : Cá mập"));
-        userArray.add(new User("Tuna        : Cá ngừ"));
-        userArray.add(new User("Mackerel    : Cá thu"));
-        userArray.add(new User("Catfish     : Cá trê"));
-        userArray.add(new User("Goldfish    : Cá vàng"));
-        userArray.add(new User("Whale       : Cá voi"));
-        userArray.add(new User("Eel         : Con lươn"));
-        userArray.add(new User("Jellyfish   : Con sứa"));
-        userArray.add(new User("Crab        : Cua"));
-        userArray.add(new User("Seal        : Hải cẩu"));
-        userArray.add(new User("Squid       : Mực"));
-        userArray.add(new User("Starfish    : Sao biển"));
-        userArray.add(new User("Mussel      : Trai"));
-        userArray.add(new User("Shrimp      : Tôm"));
-        userArray.add(new User("Lobster     : Tôm hùm"));
+        userArray.add(new User("Octopus\nBạch tuộc"));
+        userArray.add(new User("Carp\nCá chép"));
+        userArray.add(new User("Dolphin\nCá heo"));
+        userArray.add(new User("Shark\nCá mập"));
+        userArray.add(new User("Tuna\nCá ngừ"));
+        userArray.add(new User("Mackerel\nCá thu"));
+        userArray.add(new User("Catfish\nCá trê"));
+        userArray.add(new User("Goldfish\nCá vàng"));
+        userArray.add(new User("Whale\nCá voi"));
+        userArray.add(new User("Eel\nCon lươn"));
+        userArray.add(new User("Jellyfish\nCon sứa"));
+        userArray.add(new User("Crab\nCua"));
+        userArray.add(new User("Seal\nHải cẩu"));
+        userArray.add(new User("Squid\nMực"));
+        userArray.add(new User("Starfish\nSao biển"));
+        userArray.add(new User("Mussel\nTrai"));
+        userArray.add(new User("Shrimp\nTôm"));
+        userArray.add(new User("Lobster\nTôm hùm"));
 
 
         audio_list.add(R.raw.foctopus);
@@ -521,20 +520,20 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitBird()
     {
         getSupportActionBar().setTitle("CÁC LOÀI CHIM");
-        userArray.add(new User("Crow        : Quạ"));
-        userArray.add(new User("Dove        : Bồ câu"));
-        userArray.add(new User("Duck        : Vịt"));
-        userArray.add(new User("Eagle       : Đại bàng"));
-        userArray.add(new User("Finch       : Chim sẻ"));
-        userArray.add(new User("Hawk        : Chim diều hâu"));
-        userArray.add(new User("Kingfisher  : Chim bói cá"));
-        userArray.add(new User("Owl         : Chim cú"));
-        userArray.add(new User("Seagull     : Chim hải âu"));
-        userArray.add(new User("Swan        : Thiên nga"));
-        userArray.add(new User("Woodpecker  : Chim gõ kiến"));
-        userArray.add(new User("Chick       : Gà con"));
-        userArray.add(new User("Duckling    : Vịt con"));
-        userArray.add(new User("Parrot      : Vẹt"));
+        userArray.add(new User("Crow\nQuạ"));
+        userArray.add(new User("Dove\nBồ câu"));
+        userArray.add(new User("Duck\nVịt"));
+        userArray.add(new User("Eagle\nĐại bàng"));
+        userArray.add(new User("Finch\nChim sẻ"));
+        userArray.add(new User("Hawk\nChim diều hâu"));
+        userArray.add(new User("Kingfisher\nChim bói cá"));
+        userArray.add(new User("Owl\nChim cú"));
+        userArray.add(new User("Seagull\nChim hải âu"));
+        userArray.add(new User("Swan\nThiên nga"));
+        userArray.add(new User("Woodpecker\nChim gõ kiến"));
+        userArray.add(new User("Chick\nGà con"));
+        userArray.add(new User("Duckling\nVịt con"));
+        userArray.add(new User("Parrot\nVẹt"));
 
         audio_list.add(R.raw.bcrow);
         audio_list.add(R.raw.bdove);
@@ -554,20 +553,20 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitInsect()
     {
         getSupportActionBar().setTitle("CÁC LOÀI CÔN TRÙNG");
-        userArray.add(new User("Ant         : Kiến"));
-        userArray.add(new User("Bee         : Ong"));
-        userArray.add(new User("Butterfly   : Bướm"));
-        userArray.add(new User("Centipede   : Con rết"));
-        userArray.add(new User("Cockroach   : Gián"));
-        userArray.add(new User("Cricket     : Dế"));
-        userArray.add(new User("Fly         : Ruồi"));
-        userArray.add(new User("Mosquito    : Muỗi"));
-        userArray.add(new User("Scorpion    : Bọ cạp"));
-        userArray.add(new User("Snail       : Ốc"));
-        userArray.add(new User("Spider      : Nhện"));
-        userArray.add(new User("Termite     : Con mối"));
-        userArray.add(new User("Worm        : Sâu"));
-        userArray.add(new User("Grasshopper : Châu chấu"));
+        userArray.add(new User("Ant\nKiến"));
+        userArray.add(new User("Bee\nOng"));
+        userArray.add(new User("Butterfly\nBướm"));
+        userArray.add(new User("Centipede\nCon rết"));
+        userArray.add(new User("Cockroach\nGián"));
+        userArray.add(new User("Cricket\nDế"));
+        userArray.add(new User("Fly\nRuồi"));
+        userArray.add(new User("Mosquito\nMuỗi"));
+        userArray.add(new User("Scorpion\nBọ cạp"));
+        userArray.add(new User("Snail\nỐc"));
+        userArray.add(new User("Spider\nNhện"));
+        userArray.add(new User("Termite\nCon mối"));
+        userArray.add(new User("Worm\nSâu"));
+        userArray.add(new User("Grasshopper\nChâu chấu"));
 
         audio_list.add(R.raw.itant);
         audio_list.add(R.raw.itbee);
@@ -587,18 +586,18 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitCattle()
     {
         getSupportActionBar().setTitle("NHÓM VẬT NUÔI");
-        userArray.add(new User("Cattle  : Gia súc"));
-        userArray.add(new User("Bull    : Bò đực"));
-        userArray.add(new User("Bullock : Bò đực con"));
-        userArray.add(new User("Cow     : Bò"));
-        userArray.add(new User("Calf    : Bê"));
-        userArray.add(new User("Cock    : Gà trống"));
-        userArray.add(new User("Hen     : Gà mái"));
-        userArray.add(new User("Donkey  : Con lừa"));
-        userArray.add(new User("Goat    : Dê"));
-        userArray.add(new User("Goose   : Ngỗng"));
-        userArray.add(new User("Turkey  : Gà tây"));
-        userArray.add(new User("Pig     : Lợn"));
+        userArray.add(new User("Cattle\nGia súc"));
+        userArray.add(new User("Bull\nBò đực"));
+        userArray.add(new User("Bullock\nBò đực con"));
+        userArray.add(new User("Cow\nBò"));
+        userArray.add(new User("Calf\nBê"));
+        userArray.add(new User("Cock\nGà trống"));
+        userArray.add(new User("Hen\nGà mái"));
+        userArray.add(new User("Donkey\nCon lừa"));
+        userArray.add(new User("Goat\nDê"));
+        userArray.add(new User("Goose\nNgỗng"));
+        userArray.add(new User("Turkey\nGà tây"));
+        userArray.add(new User("Pig\nLợn"));
 
         audio_list.add(R.raw.ctcattle);
         audio_list.add(R.raw.ctbull);
@@ -616,35 +615,35 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitWildAnimal()
     {
         getSupportActionBar().setTitle("CÁC LOÀI HOANG DÃ");
-        userArray.add(new User("Bat         : Rơi"));
-        userArray.add(new User("Deer        : Hươu"));
-        userArray.add(new User("Frog        : Ếch"));
-        userArray.add(new User("Fox         : Cáo"));
-        userArray.add(new User("Hare        : Thỏ rừng"));
-        userArray.add(new User("Hedgehog    : Nhím"));
-        userArray.add(new User("Lizard      : Thằn lằn"));
-        userArray.add(new User("Reindeer    : Tuần lộc"));
-        userArray.add(new User("Snake       : Rắn"));
-        userArray.add(new User("Squirrel    : Sóc"));
-        userArray.add(new User("Toad        : Cóc"));
-        userArray.add(new User("Antelope    : Linh dương"));
-        userArray.add(new User("Bear        : Gấu"));
-        userArray.add(new User("Camel       : Lạc đà"));
-        userArray.add(new User("Crocodile   : Cá sấu"));
-        userArray.add(new User("Elephant    : Voi"));
-        userArray.add(new User("Giraffe     : Hươu cao cổ"));
-        userArray.add(new User("Gorilla     : Khỉ đột"));
-        userArray.add(new User("Kangaroo    : Chuột túi"));
-        userArray.add(new User("Leopard     : Báo"));
-        userArray.add(new User("Lion        : Sư tử"));
-        userArray.add(new User("Monkey      : Khỉ"));
-        userArray.add(new User("Ostrich     : Đà điểu"));
-        userArray.add(new User("Panda       : Gấu trúc"));
-        userArray.add(new User("Penguin     : Chím cánh cụt"));
-        userArray.add(new User("Polar bear  : Gấu bắc cực"));
-        userArray.add(new User("Tiger       : Hổ"));
-        userArray.add(new User("Zebra       : Ngựa vằn"));
-        userArray.add(new User("Wolf        : Sói"));
+        userArray.add(new User("Bat\nRơi"));
+        userArray.add(new User("Deer\nHươu"));
+        userArray.add(new User("Frog\nẾch"));
+        userArray.add(new User("Fox\nCáo"));
+        userArray.add(new User("Hare\nThỏ rừng"));
+        userArray.add(new User("Hedgehog\nNhím"));
+        userArray.add(new User("Lizard\nThằn lằn"));
+        userArray.add(new User("Reindeer\nTuần lộc"));
+        userArray.add(new User("Snake\nRắn"));
+        userArray.add(new User("Squirrel\nSóc"));
+        userArray.add(new User("Toad\nCóc"));
+        userArray.add(new User("Antelope\nLinh dương"));
+        userArray.add(new User("Bear\nGấu"));
+        userArray.add(new User("Camel\nLạc đà"));
+        userArray.add(new User("Crocodile\nCá sấu"));
+        userArray.add(new User("Elephant\nVoi"));
+        userArray.add(new User("Giraffe\nHươu cao cổ"));
+        userArray.add(new User("Gorilla\nKhỉ đột"));
+        userArray.add(new User("Kangaroo\nChuột túi"));
+        userArray.add(new User("Leopard\nBáo"));
+        userArray.add(new User("Lion\nSư tử"));
+        userArray.add(new User("Monkey\nKhỉ"));
+        userArray.add(new User("Ostrich\nĐà điểu"));
+        userArray.add(new User("Panda\nGấu trúc"));
+        userArray.add(new User("Penguin\nChím cánh cụt"));
+        userArray.add(new User("Polar bear\nGấu bắc cực"));
+        userArray.add(new User("Tiger\nHổ"));
+        userArray.add(new User("Zebra\nNgựa vằn"));
+        userArray.add(new User("Wolf\nSói"));
 
         audio_list.add(R.raw.anibat);
         audio_list.add(R.raw.anideer);
@@ -679,17 +678,17 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitFlowers()
     {
         getSupportActionBar().setTitle("CÁC LOÀI HOA");
-        userArray.add(new User("Rose        :Hoa hồng"));
-        userArray.add(new User("Orchid      :Hoa lan"));
-        userArray.add(new User("Lily        :Hoa loa kèn"));
-        userArray.add(new User("Daisy       :Hoa cúc"));
-        userArray.add(new User("Dandelion   :Hoa bồ công anh"));
-        userArray.add(new User("Carnation   :Hoa cẩm chướng"));
-        userArray.add(new User("Poppy       :Hoa anh túc"));
-        userArray.add(new User("Sunflower   :Hoa hướng dương"));
-        userArray.add(new User("Tulip       :Hoa tulip"));
-        userArray.add(new User("Waterlily   :Hoa súng"));
-        userArray.add(new User("Forget-me-not:  Hoa lưu ly"));
+        userArray.add(new User("Rose\nHoa hồng"));
+        userArray.add(new User("Orchid\nHoa lan"));
+        userArray.add(new User("Lily\nHoa loa kèn"));
+        userArray.add(new User("Daisy\nHoa cúc"));
+        userArray.add(new User("Dandelion\nHoa bồ công anh"));
+        userArray.add(new User("Carnation\nHoa cẩm chướng"));
+        userArray.add(new User("Poppy\nHoa anh túc"));
+        userArray.add(new User("Sunflower\nHoa hướng dương"));
+        userArray.add(new User("Tulip\nHoa tulip"));
+        userArray.add(new User("Waterlily\nHoa súng"));
+        userArray.add(new User("Forget-me-not\nHoa lưu ly"));
 
         audio_list.add(R.raw.flrose);
         audio_list.add(R.raw.florchid);
@@ -706,25 +705,25 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitMaterial()
     {
         getSupportActionBar().setTitle("CÁC LOẠI VẬT LIỆU");
-        userArray.add(new User("Brick:      Gạch"));
-        userArray.add(new User("Cement:     Xi măng"));
-        userArray.add(new User("Concrete:   Bê tông"));
-        userArray.add(new User("Glass:      Thủy tinh"));
-        userArray.add(new User("Gravel:     Sỏi"));
-        userArray.add(new User("Marble:     Đá hoa"));
-        userArray.add(new User("Metal:      Kim loại"));
-        userArray.add(new User("Plastic:    Nhựa"));
-        userArray.add(new User("Sand:       Cát"));
-        userArray.add(new User("Slate:      Ngói"));
-        userArray.add(new User("Stone:      Đá cục"));
-        userArray.add(new User("Wood:       Gỗ"));
-        userArray.add(new User("Cloth:      Vải"));
-        userArray.add(new User("Cotton:     Cotton"));
-        userArray.add(new User("Lace:       Ren"));
-        userArray.add(new User("Leather:    Da"));
-        userArray.add(new User("Nylon:      Ni-lông"));
-        userArray.add(new User("Silk:       Lụa"));
-        userArray.add(new User("Wool:       Len"));
+        userArray.add(new User("Brick\nGạch"));
+        userArray.add(new User("Cement\nXi măng"));
+        userArray.add(new User("Concrete\nBê tông"));
+        userArray.add(new User("Glass\nThủy tinh"));
+        userArray.add(new User("Gravel\nSỏi"));
+        userArray.add(new User("Marble\nĐá hoa"));
+        userArray.add(new User("Metal\nKim loại"));
+        userArray.add(new User("Plastic\nNhựa"));
+        userArray.add(new User("Sand\nCát"));
+        userArray.add(new User("Slate\nNgói"));
+        userArray.add(new User("Stone\nĐá cục"));
+        userArray.add(new User("Wood\nGỗ"));
+        userArray.add(new User("Cloth\nVải"));
+        userArray.add(new User("Cotton\nCotton"));
+        userArray.add(new User("Lace\nRen"));
+        userArray.add(new User("Leather\nDa"));
+        userArray.add(new User("Nylon\nNi-lông"));
+        userArray.add(new User("Silk\nLụa"));
+        userArray.add(new User("Wool\nLen"));
 
         audio_list.add(R.raw.matbrick);
         audio_list.add(R.raw.matcement);
@@ -751,19 +750,19 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitMetal()
     {
         getSupportActionBar().setTitle("CÁC DẠNG KIM LOẠI");
-        userArray.add(new User("Aluminium   : Nhôm"));
-        userArray.add(new User("Brass       : Đồng thau"));
-        userArray.add(new User("Gold        : Vàng"));
-        userArray.add(new User("Iron        : Sắt"));
-        userArray.add(new User("Lead        : Chì"));
-        userArray.add(new User("Mercury     : Thủy ngân"));
-        userArray.add(new User("Magnesium   : Ma-giê"));
-        userArray.add(new User("Nickel      : Kền"));
-        userArray.add(new User("Platinum    : Bạch kim"));
-        userArray.add(new User("Silver      : Bạc"));
-        userArray.add(new User("Steel       : Thép"));
-        userArray.add(new User("Tin         : Thiếc"));
-        userArray.add(new User("Zinc        : Kẽm"));
+        userArray.add(new User("Aluminium\n Nhôm"));
+        userArray.add(new User("Brass\nĐồng thau"));
+        userArray.add(new User("Gold\nVàng"));
+        userArray.add(new User("Iron\nSắt"));
+        userArray.add(new User("Lead\nChì"));
+        userArray.add(new User("Mercury\nThủy ngân"));
+        userArray.add(new User("Magnesium\nMa-giê"));
+        userArray.add(new User("Nickel\nKền"));
+        userArray.add(new User("Platinum\nBạch kim"));
+        userArray.add(new User("Silver\nBạc"));
+        userArray.add(new User("Steel\nThép"));
+        userArray.add(new User("Tin\nThiếc"));
+        userArray.add(new User("Zinc\nKẽm"));
 
         audio_list.add(R.raw.memealuminium);
         audio_list.add(R.raw.mebrass);
@@ -782,21 +781,21 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitGas()
     {
         getSupportActionBar().setTitle("CÁC KHÍ VÀ DẠNG VẬT CHẤT");
-        userArray.add(new User("Charcoal    : Than củi"));
-        userArray.add(new User("Coal        : Than đá"));
-        userArray.add(new User("Gas         : Ga"));
-        userArray.add(new User("Oil         : Dầu"));
-        userArray.add(new User("Petrol      : Xăng"));
-        userArray.add(new User("Clay        : Đất sét"));
-        userArray.add(new User("Dust        : Bụi"));
-        userArray.add(new User("Mud         : Bùn"));
-        userArray.add(new User("Paper       : Giấy"));
-        userArray.add(new User("Rubber      : Cao su"));
-        userArray.add(new User("Smoke       : Khói"));
-        userArray.add(new User("Soil        : Đất"));
-        userArray.add(new User("Ice         : Đá băng"));
-        userArray.add(new User("Steam       : Hơi nước"));
-        userArray.add(new User("Water       : Nước"));
+        userArray.add(new User("Charcoal\nThan củi"));
+        userArray.add(new User("Coal\nThan đá"));
+        userArray.add(new User("Gas\nGa"));
+        userArray.add(new User("Oil\nDầu"));
+        userArray.add(new User("Petrol\nXăng"));
+        userArray.add(new User("Clay\nĐất sét"));
+        userArray.add(new User("Dust\nBụi"));
+        userArray.add(new User("Mud\nBùn"));
+        userArray.add(new User("Paper\nGiấy"));
+        userArray.add(new User("Rubber\nCao su"));
+        userArray.add(new User("Smoke\nKhói"));
+        userArray.add(new User("Soil\nĐất"));
+        userArray.add(new User("Ice\nĐá băng"));
+        userArray.add(new User("Steam\nHơi nước"));
+        userArray.add(new User("Water\nNước"));
 
         audio_list.add(R.raw.gacharcoal);
         audio_list.add(R.raw.gacoal);
@@ -852,20 +851,20 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitParam()
     {
         getSupportActionBar().setTitle("CÁC ĐẠI LƯỢNG VẬT LÝ");
-        userArray.add(new User("Area            : Diện tích"));
-        userArray.add(new User("Circumference   : Chu vi đường tròn"));
-        userArray.add(new User("Diameter        : Đường kính"));
-        userArray.add(new User("Radius          : Bán kính"));
-        userArray.add(new User("Length          : Chiều dài"));
-        userArray.add(new User("Height          : Chiều cao"));
-        userArray.add(new User("Width           : Chiều rộng"));
-        userArray.add(new User("Perimeter       : Chu vi"));
-        userArray.add(new User("Angle           : Góc"));
-        userArray.add(new User("Right angle     : Góc vuông"));
-        userArray.add(new User("Line            : Đường"));
-        userArray.add(new User("Straight line   : Đường thẳng"));
-        userArray.add(new User("Curve           : Đường cong"));
-        userArray.add(new User("Volume          : Thể tích"));
+        userArray.add(new User("Area\nDiện tích"));
+        userArray.add(new User("Circumference\nChu vi đường tròn"));
+        userArray.add(new User("Diameter\nĐường kính"));
+        userArray.add(new User("Radius\nBán kính"));
+        userArray.add(new User("Length\nChiều dài"));
+        userArray.add(new User("Height\nChiều cao"));
+        userArray.add(new User("Width\nChiều rộng"));
+        userArray.add(new User("Perimeter\nChu vi"));
+        userArray.add(new User("Angle\nGóc"));
+        userArray.add(new User("Right angle\nGóc vuông"));
+        userArray.add(new User("Line\nĐường"));
+        userArray.add(new User("Straight line\nĐường thẳng"));
+        userArray.add(new User("Curve\nĐường cong"));
+        userArray.add(new User("Volume\nThể tích"));
 
         audio_list.add(R.raw.prarea);
         audio_list.add(R.raw.prcircumference);
@@ -885,19 +884,19 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitFoodMeet()
     {
         getSupportActionBar().setTitle("CÁC LOẠI THỊT");
-        userArray.add(new User("Liver       : Gan"));
-        userArray.add(new User("Ham         : Giăm Bông"));
-        userArray.add(new User("Pate        : Pa tê"));
-        userArray.add(new User("veal        : Thịt Bê"));
-        userArray.add(new User("Beef        : Thị Bò"));
-        userArray.add(new User("Lamb        : Thịt Cừu"));
-        userArray.add(new User("Chicken     : Thị Gà"));
-        userArray.add(new User("turkey      : Thịt gà tây"));
-        userArray.add(new User("Pork        : Thịt Lợn"));
-        userArray.add(new User("Bacon       : Thịt Muối"));
-        userArray.add(new User("Cooked meat : Thị nấu chín"));
-        userArray.add(new User("Duck        : Thịt Vịt"));
-        userArray.add(new User("Sausages    : Xúc xíc"));
+        userArray.add(new User("Liver\nGan"));
+        userArray.add(new User("Ham\nGiăm Bông"));
+        userArray.add(new User("Pate\nPa tê"));
+        userArray.add(new User("Veal\nThịt Bê"));
+        userArray.add(new User("Beef\nThị Bò"));
+        userArray.add(new User("Lamb\nThịt Cừu"));
+        userArray.add(new User("Chicken\nThị Gà"));
+        userArray.add(new User("Turkey\nThịt Gà tây"));
+        userArray.add(new User("Pork\nThịt Lợn"));
+        userArray.add(new User("Bacon\nThịt Muối"));
+        userArray.add(new User("Cooked meat\nThị nấu chín"));
+        userArray.add(new User("Duck\nThịt Vịt"));
+        userArray.add(new User("Sausages\nXúc xíc"));
 
         audio_list.add(R.raw.foliver);
         audio_list.add(R.raw.foham);
@@ -910,105 +909,152 @@ public class WordGroupActivity extends AppCompatActivity {
         audio_list.add(R.raw.fopork);
         audio_list.add(R.raw.fobacon);
         audio_list.add(R.raw.focookedmeat);
+        audio_list.add(R.raw.foduck);
         audio_list.add(R.raw.fosausages);
 
     }
     public void InitFoodMilk()
     {
         getSupportActionBar().setTitle("CÁC LOẠI SỮA - ĐỒ UỐNG");
-        userArray.add(new User("Butter     : Bơ"));
-        userArray.add(new User("Cream      : Kem"));
-        userArray.add(new User("Cheese     : Phô mai"));
-        userArray.add(new User("Egg        : Trứng"));
-        userArray.add(new User("Milk       : Sữa"));
-        userArray.add(new User("Sour cream : Kem chua"));
-        userArray.add(new User("Yoghurt    : Sữa chua"));
+        userArray.add(new User("Butter\nBơ"));
+        userArray.add(new User("Cream\nKem"));
+        userArray.add(new User("Sour cream\nKem chua"));
+        userArray.add(new User("Cheese\nPhô mai"));
+        userArray.add(new User("Egg\nTrứng"));
+        userArray.add(new User("Milk\nSữa"));
+        userArray.add(new User("Yoghurt\nSữa chua"));
 
         audio_list.add(R.raw.dributter);
         audio_list.add(R.raw.dricream);
+        audio_list.add(R.raw.drisourcream);
         audio_list.add(R.raw.dricheese);
         audio_list.add(R.raw.driegg);
         audio_list.add(R.raw.drimilk);
-        audio_list.add(R.raw.drisourcream);
         audio_list.add(R.raw.driyoghurt);
     }
     public void InitFoodFruits()
     {
         getSupportActionBar().setTitle("CÁC LOẠI TRÁI CÂY");
-        userArray.add(new User("Cherry      : Anh đào"));
-        userArray.add(new User("Grapefruit  : Bưởi"));
-        userArray.add(new User("Orange 	    : Cam"));
-        userArray.add(new User("Banana 	    : Chuối"));
-        userArray.add(new User("Melon 	    : Dưa"));
-        userArray.add(new User("Coconut     : Dừa"));
-        userArray.add(new User("Pineapple   : Dứa"));
-        userArray.add(new User("Peach 	    : Đào"));
-        userArray.add(new User("Pear 	    : Lê"));
-        userArray.add(new User("Plum 	    : Mận"));
-        userArray.add(new User("Apricot     : Mơ"));
-        userArray.add(new User("Grape 	    : Nho"));
-        userArray.add(new User("Fig 	    : Sung"));
-        userArray.add(new User("Apple       : Táo"));
-        userArray.add(new User("Mango 	    : Xoài"));
-        userArray.add(new User("Kiwi fruit  : Quả Kiwi"));
-        userArray.add(new User("Lemon 	    : Quả Chanh tây"));
-        userArray.add(new User("Lime 	    : Quả Chanh ta"));
-        userArray.add(new User("Pomegranate : Quả Lựu"));
-        userArray.add(new User("Raspberry 	: Quả mâm xôi đỏ"));
-        userArray.add(new User("Blackberry  : Quả mâm xôi đen"));
-        userArray.add(new User("Strawberry 	: Quả Dâu"));
+        userArray.add(new User("Cherry\nAnh đào"));
+        userArray.add(new User("Grapefruit\nBưởi"));
+        userArray.add(new User("Orange\nCam"));
+        userArray.add(new User("Banana\nChuối"));
+        userArray.add(new User("Melon\nDưa"));
+        userArray.add(new User("Coconut\nDừa"));
+        userArray.add(new User("Pineapple\nDứa"));
+        userArray.add(new User("Peach\nĐào"));
+        userArray.add(new User("Pear\nLê"));
+        userArray.add(new User("Plum\nMận"));
+        userArray.add(new User("Apricot\nMơ"));
+        userArray.add(new User("Grape\nNho"));
+        userArray.add(new User("Fig\nSung"));
+        userArray.add(new User("Apple\nTáo"));
+        userArray.add(new User("Mango\nXoài"));
+        userArray.add(new User("Kiwi fruit\nQuả Kiwi"));
+        userArray.add(new User("Lemon\nQuả Chanh tây"));
+        userArray.add(new User("Lime\nQuả Chanh ta"));
+        userArray.add(new User("Pomegranate\nQuả Lựu"));
+        userArray.add(new User("Raspberry\nQuả mâm xôi đỏ"));
+        userArray.add(new User("Blackberry\nQuả mâm xôi đen"));
+        userArray.add(new User("Strawberry\nQuả Dâu"));
+
+        audio_list.add(R.raw.frtcherry);
+        audio_list.add(R.raw.frtgrapefruit);
+        audio_list.add(R.raw.frtorange);
+        audio_list.add(R.raw.frtbanana);
+        audio_list.add(R.raw.frtmelon);
+        audio_list.add(R.raw.frtcoconut);
+        audio_list.add(R.raw.frtpineapple);
+        audio_list.add(R.raw.frtpeach);
+        audio_list.add(R.raw.frtpear);
+        audio_list.add(R.raw.frtplum);
+        audio_list.add(R.raw.frtapricot);
+        audio_list.add(R.raw.frtgrape);
+        audio_list.add(R.raw.frtfig);
+        audio_list.add(R.raw.frtapple);
+        audio_list.add(R.raw.frtmango);
+        audio_list.add(R.raw.frtkiwifruit);
+        audio_list.add(R.raw.frtlemon);
+        audio_list.add(R.raw.frtlime);
+        audio_list.add(R.raw.frtpomegranate);
+        audio_list.add(R.raw.frtraspberry);
+        audio_list.add(R.raw.frtblackberry);
+        audio_list.add(R.raw.frtstrawberry);
     }
 
     public void InitVegetable()
     {
         getSupportActionBar().setTitle("CÁC LOẠI RAU - CỦ- HẠT");
-        userArray.add(new User("Cabbage: Bắp cải"));
-        userArray.add(new User("Cacao: Cây ca cao"));
-        userArray.add(new User("Catawissa: Hành ta"));
-        userArray.add(new User("Cauliflower: Hoa cải, hoa lơ"));
-        userArray.add(new User("Celery: Cần tây"));
-        userArray.add(new User("Chayote : Su su"));
-        userArray.add(new User("Chestnut: Hạt dẻ"));
-        userArray.add(new User("Coleslaw: Xà lách cải bắp"));
-        userArray.add(new User("Cucumber: Dưa leo"));
-        userArray.add(new User("Eggplant: Cà tím"));
-        userArray.add(new User("Galangal: Củ Giềng"));
-        userArray.add(new User("Garlic: Tỏi"));
-        userArray.add(new User("Kale: Cải ngọt"));
-        userArray.add(new User("Knotgrass: Rau răm"));
-        userArray.add(new User("Kohlrabi: Su hào"));
-        userArray.add(new User("Lettuce: Rau diếp"));
-        userArray.add(new User("Ginger, Ginger root: Gừng"));
-        userArray.add(new User("Gourd: Quả bầu"));
-        userArray.add(new User("Tomato: Cà chua"));
-        userArray.add(new User("Dill: Cây thì là"));
-        userArray.add(new User("Water morning glory: Rau Muống"));
-        userArray.add(new User("Wild Betel leave: Lá Lốt"));
-        userArray.add(new User("White Radish: Củ Cải Trắng"));
-        userArray.add(new User("Yam: (Mỹ) Khoai lang"));
+        userArray.add(new User("Cabbage\nBắp cải"));
+        userArray.add(new User("Cacao\nCây ca cao"));
+        userArray.add(new User("Cauliflower\nHoa cải, hoa lơ"));
+        userArray.add(new User("Celery\nCần tây"));
+        userArray.add(new User("Chayote\nSu su"));
+        userArray.add(new User("Chestnut\nHạt dẻ"));
+        userArray.add(new User("Coleslaw\nXà lách cải bắp"));
+        userArray.add(new User("Cucumber\nDưa leo"));
+        userArray.add(new User("Eggplant\nCà tím"));
+        userArray.add(new User("Galangal\nCủ Giềng"));
+        userArray.add(new User("Garlic\nTỏi"));
+        userArray.add(new User("Kale\nCải ngọt"));
+        userArray.add(new User("Knotgrass\nRau răm"));
+        userArray.add(new User("Kohlrabi\nSu hào"));
+        userArray.add(new User("Lettuce\nRau diếp"));
+        userArray.add(new User("Ginger, Ginger root\nGừng"));
+        userArray.add(new User("Gourd\nQuả bầu"));
+        userArray.add(new User("Tomato\nCà chua"));
+        userArray.add(new User("Dill\nCây thì là"));
+        userArray.add(new User("Water morning glory\nRau Muống"));
+        userArray.add(new User("Wild Betel leave\nLá Lốt"));
+        userArray.add(new User("White Radish\nCủ Cải Trắng"));
+        userArray.add(new User("Yam\nKhoai lang mỹ"));
+
+        audio_list.add(R.raw.vecabbage);
+        audio_list.add(R.raw.vecacao);
+        audio_list.add(R.raw.vecauliflower);
+        audio_list.add(R.raw.vecelery);
+        audio_list.add(R.raw.vechayote);
+        audio_list.add(R.raw.vechestnut);
+        audio_list.add(R.raw.vecoleslaw);
+        audio_list.add(R.raw.vecucumber);
+        audio_list.add(R.raw.veeggplant);
+        audio_list.add(R.raw.vegalangal);
+        audio_list.add(R.raw.vegarlic);
+        audio_list.add(R.raw.vekale);
+        audio_list.add(R.raw.veknotgrass);
+        audio_list.add(R.raw.vekohlrabi);
+        audio_list.add(R.raw.velettuce);
+        audio_list.add(R.raw.veginger);
+        audio_list.add(R.raw.vegourd);
+        audio_list.add(R.raw.vetomato);
+        audio_list.add(R.raw.vedill);
+        audio_list.add(R.raw.vewatermorningglory);
+        audio_list.add(R.raw.vewildbetelleave);
+        audio_list.add(R.raw.vewhiteradish);
+        audio_list.add(R.raw.veyam);
     }
 
     public void InitDrinking()
     {
         getSupportActionBar().setTitle("CÁC LOẠI ĐỒ UỐNG");
-        userArray.add(new User("mineral water: nước khoáng"));
-        userArray.add(new User("fruit juice: nước trái cây\n"));
-        userArray.add(new User("orange juice: nước cam"));
-        userArray.add(new User("pineapple juice: nước dứa"));
-        userArray.add(new User("tomato juice: nước cà chua"));
-        userArray.add(new User("smoothies: sinh tố"));
-        userArray.add(new User("lemonade: nước chanh"));
-        userArray.add(new User("squash: nước ép"));
-        userArray.add(new User("iced tea: trà đá"));
-        userArray.add(new User("Tea: Trà"));
-        userArray.add(new User("coffee: cà phê"));
-        userArray.add(new User("cocoa: ca cao"));
-        userArray.add(new User("beer: Bia"));
-        userArray.add(new User("Wine: Rượu"));
-        userArray.add(new User("Bitter     : Rượu Đắng"));
-        userArray.add(new User("Champagne  : Sâm banh"));
-        userArray.add(new User("Alcohol    : Rượu bia nói chung"));
-        userArray.add(new User("Spirits    : Rượu mạnh"));
+        userArray.add(new User("Mineral water\nnước khoáng"));
+        userArray.add(new User("Fruit juice\nnước trái cây\n"));
+        userArray.add(new User("Orange juice\nnước cam"));
+        userArray.add(new User("Pineapple juice\nnước dứa"));
+        userArray.add(new User("Tomato juice\nnước cà chua"));
+        userArray.add(new User("Smoothies\nsinh tố"));
+        userArray.add(new User("Lemonade\nnước chanh"));
+        userArray.add(new User("Squash\nnước ép"));
+        userArray.add(new User("Iced tea\ntrà đá"));
+        userArray.add(new User("Tea\nTrà"));
+        userArray.add(new User("Coffee\ncà phê"));
+        userArray.add(new User("Cocoa\nca cao"));
+        userArray.add(new User("Beer\nBia"));
+        userArray.add(new User("Wine\nRượu"));
+        userArray.add(new User("Bitter\nRượu Đắng"));
+        userArray.add(new User("Champagne\nSâm banh"));
+        userArray.add(new User("Alcohol\nRượu bia nói chung"));
+        userArray.add(new User("Spirits\nRượu mạnh"));
 
         audio_list.add(R.raw.tomineralwater);
         audio_list.add(R.raw.tofruitjuice);
@@ -1033,18 +1079,18 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitCake()
     {
         getSupportActionBar().setTitle("CÁC LOẠI BÁNH-BỘT");
-        userArray.add(new User("Bread – Bánh mì"));
-        userArray.add(new User("Quick bread – Bánh mì nhanh"));
-        userArray.add(new User("stuffed pancake: Bánh cuốn"));
-        userArray.add(new User("round sticky rice cake: Bánh dầy"));
-        userArray.add(new User("girdle-cake: Bánh tráng"));
-        userArray.add(new User("shrimp in batter: Bánh tôm"));
-        userArray.add(new User("young rice cake: Bánh cốm "));
-        userArray.add(new User("stuffed sticky rice balls: Bánh trôi"));
-        userArray.add(new User("soya cake: Bánh đậu"));
-        userArray.add(new User("steamed wheat flour cake: Bánh bao"));
-        userArray.add(new User("pancako: Bánh xèo"));
-        userArray.add(new User("stuffed sticky rice cake: Bánh chưng"));
+        userArray.add(new User("Bread\nBánh mì"));
+        userArray.add(new User("Quick bread\nBánh mì nhanh"));
+        userArray.add(new User("Stuffed pancake\nBánh cuốn"));
+        userArray.add(new User("Round sticky rice cake\nBánh dầy"));
+        userArray.add(new User("Girdle-cake\nBánh tráng"));
+        userArray.add(new User("Shrimp in batter\nBánh tôm"));
+        userArray.add(new User("Young rice cake\nBánh cốm "));
+        userArray.add(new User("Stuffed sticky rice balls\nBánh trôi"));
+        userArray.add(new User("Soya cake\nBánh đậu"));
+        userArray.add(new User("Steamed wheat flour cake\nBánh bao"));
+        userArray.add(new User("Pancako\nBánh xèo"));
+        userArray.add(new User("Stuffed sticky rice cake\nBánh chưng"));
 
         audio_list.add(R.raw.ckbread);
         audio_list.add(R.raw.ckquickbread);
@@ -1057,48 +1103,48 @@ public class WordGroupActivity extends AppCompatActivity {
         audio_list.add(R.raw.cksoyacake);
         audio_list.add(R.raw.cksteamedwheatflourcake);
         audio_list.add(R.raw.ckpancako);
-        audio_list.add(R.raw.ckstuffedpancake);
+        audio_list.add(R.raw.ckstuffedstickyricecake);
     }
 
     public void InitCookTool()
     {
         getSupportActionBar().setTitle("CÁC LOẠI DỤNG CỤ LÀM BẾP");
-        userArray.add(new User("apron: tạp dề"));
-        userArray.add(new User("baking pan/ baking sheet: khay nướng bánh"));
-        userArray.add(new User("barbecue grill: vỉ nướng"));
-        userArray.add(new User("blender: máy xay sinh tố"));
-        userArray.add(new User("charcoal grill: lò nướng bằng than"));
-        userArray.add(new User("cheese cloth: vải lọc"));
-        userArray.add(new User("cookbook: sách hướng dẫn nấu ăn"));
-        userArray.add(new User("cutlery: bộ dao kéo"));
-        userArray.add(new User("cutting board: cái thớt"));
-        userArray.add(new User("egg beater: máy đánh trứng"));
-        userArray.add(new User("fondue pot: nồi lẩu"));
-        userArray.add(new User("fork: nĩa"));
-        userArray.add(new User("frying pan: chảo rán"));
-        userArray.add(new User("grater: đồ bào, mài"));
-        userArray.add(new User("griddle: vỉ nướng"));
-        userArray.add(new User("grill pan: chảo nướng"));
-        userArray.add(new User("grinder: cối xay"));
-        userArray.add(new User("ice bucket: xô đựng đá"));
-        userArray.add(new User("juicer: máy ép trái cây"));
-        userArray.add(new User("kettle: ấm nước"));
-        userArray.add(new User("knife: dao"));
-        userArray.add(new User("ladle: muôi, vá"));
-        userArray.add(new User("lid: nắp"));
-        userArray.add(new User("microwave oven: lò vi sóng"));
-        userArray.add(new User("platter: đĩa"));
-        userArray.add(new User("pot holder: găng tay lót nồi"));
-        userArray.add(new User("pressure cooker: nồi áp suất"));
-        userArray.add(new User("refrigerator: tủ lạnh"));
-        userArray.add(new User("rice cooker: nồi cơm điện"));
-        userArray.add(new User("roaster/ roasting pan: lò quay"));
-        userArray.add(new User("skewer: cây xiên thịt"));
-        userArray.add(new User("stove: bếp"));
-        userArray.add(new User("teakettle: ấm trà"));
-        userArray.add(new User("toaster: máy nướng bánh"));
-        userArray.add(new User("utensils: đồ dùng nhà bếp"));
-        userArray.add(new User("water filter: máy lọc nước"));
+        userArray.add(new User("Apron\ntạp dề"));
+        userArray.add(new User("Baking pan/ baking sheet\nkhay nướng bánh"));
+        userArray.add(new User("Barbecue grill\nvỉ nướng"));
+        userArray.add(new User("Blender\nmáy xay sinh tố"));
+        userArray.add(new User("Charcoal grill\nlò nướng bằng than"));
+        userArray.add(new User("Cheese cloth\nvải lọc"));
+        userArray.add(new User("Cookbook\nsách hướng dẫn nấu ăn"));
+        userArray.add(new User("Cutlery\nbộ dao kéo"));
+        userArray.add(new User("Cutting board\ncái thớt"));
+        userArray.add(new User("Egg beater\nmáy đánh trứng"));
+        userArray.add(new User("Fondue pot\nnồi lẩu"));
+        userArray.add(new User("Fork\nnĩa"));
+        userArray.add(new User("Frying pan\nchảo rán"));
+        userArray.add(new User("Grater\nđồ bào, mài"));
+        userArray.add(new User("Griddle\nvỉ nướng"));
+        userArray.add(new User("Grill pan\nchảo nướng"));
+        userArray.add(new User("Grinder\ncối xay"));
+        userArray.add(new User("Ice bucket\nxô đựng đá"));
+        userArray.add(new User("Juicer\nmáy ép trái cây"));
+        userArray.add(new User("Kettle\nấm nước"));
+        userArray.add(new User("Knife\ndao"));
+        userArray.add(new User("Ladle\nmuôi, vá"));
+        userArray.add(new User("Lid\nnắp"));
+        userArray.add(new User("Microwave oven\nlò vi sóng"));
+        userArray.add(new User("Platter\nđĩa"));
+        userArray.add(new User("Pot holder\ngăng tay lót nồi"));
+        userArray.add(new User("Pressure cooker\nnồi áp suất"));
+        userArray.add(new User("Refrigerator\ntủ lạnh"));
+        userArray.add(new User("Rice cooker\nnồi cơm điện"));
+        userArray.add(new User("Roaster/ roasting pan\nlò quay"));
+        userArray.add(new User("Skewer\ncây xiên thịt"));
+        userArray.add(new User("Stove\nbếp"));
+        userArray.add(new User("Teakettle\nấm trà"));
+        userArray.add(new User("Toaster\nmáy nướng bánh"));
+        userArray.add(new User("Utensils\nđồ dùng nhà bếp"));
+        userArray.add(new User("Water filter\nmáy lọc nước"));
 
         audio_list.add(R.raw.tlapron);
         audio_list.add(R.raw.tlbakingpan);
@@ -1132,6 +1178,7 @@ public class WordGroupActivity extends AppCompatActivity {
         audio_list.add(R.raw.tlroaster);
         audio_list.add(R.raw.tlskewer);
         audio_list.add(R.raw.tlstove);
+        audio_list.add(R.raw.tlteakettle);
         audio_list.add(R.raw.tltoaster);
         audio_list.add(R.raw.tlutensils);
         audio_list.add(R.raw.tlwaterfilter);
@@ -1140,14 +1187,14 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitCookingType()
     {
         getSupportActionBar().setTitle("CÁC KIỂU NẤU.");
-        userArray.add(new User("cook with sauce: Kho"));
-        userArray.add(new User("grill: Nướng"));
-        userArray.add(new User("roast: Quay"));
-        userArray.add(new User("fry: Rán ,chiên"));
-        userArray.add(new User("Saute: Xào ,áp chảo"));
-        userArray.add(new User("stew: Hầm, ninh"));
-        userArray.add(new User("steam: Hấp"));
-        userArray.add(new User("Sweet and sour salad: Nộm"));
+        userArray.add(new User("Cook with sauce\nKho"));
+        userArray.add(new User("Grill\nNướng"));
+        userArray.add(new User("Roast\nQuay"));
+        userArray.add(new User("Fry\nRán ,chiên"));
+        userArray.add(new User("Saute\nXào ,áp chảo"));
+        userArray.add(new User("Stew\nHầm, ninh"));
+        userArray.add(new User("Steam\nHấp"));
+        userArray.add(new User("Sweet and sour salad\nNộm"));
 
         audio_list.add(R.raw.ctcookwithsauce);
         audio_list.add(R.raw.ctgrill);
@@ -1162,21 +1209,21 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitCookingSpices()
     {
         getSupportActionBar().setTitle("CÁC LOẠI GIA VỊ - BỘT");
-        userArray.add(new User("Spices       : gia vị"));
-        userArray.add(new User("Chilli sauce : tương ớt"));
-        userArray.add(new User("Chili powder : ớt bột"));
-        userArray.add(new User("Chili oil    : dầu ớt"));
-        userArray.add(new User("Chili paste  : ớt sa tế"));
-        userArray.add(new User("curry powder : bột cà ri"));
-        userArray.add(new User("pasta sauce  : sốt cà chua nấu mì Ý"));
-        userArray.add(new User("cooking oil  : dầu ăn"));
-        userArray.add(new User("olive oil    : dầu ô liu"));
-        userArray.add(new User("Sugar        : đường"));
-        userArray.add(new User("Salt         : muối"));
-        userArray.add(new User("Fish sauce   : nước mắm"));
-        userArray.add(new User("Soy sauce    : nước tương"));
-        userArray.add(new User("Pepper       : hạt tiêu"));
-        userArray.add(new User("Vinegar      : giấm"));
+        userArray.add(new User("Spices\ngia vị"));
+        userArray.add(new User("Chilli sauce\ntương ớt"));
+        userArray.add(new User("Chili powder\nớt bột"));
+        userArray.add(new User("Chili oil\ndầu ớt"));
+        userArray.add(new User("Chili paste\nớt sa tế"));
+        userArray.add(new User("Curry powder\nbột cà ri"));
+        userArray.add(new User("Pasta sauce\nsốt cà chua nấu mì Ý"));
+        userArray.add(new User("Cooking oil\ndầu ăn"));
+        userArray.add(new User("Olive oil\ndầu ô liu"));
+        userArray.add(new User("Sugar\nđường"));
+        userArray.add(new User("Salt\nmuối"));
+        userArray.add(new User("Fish sauce\nnước mắm"));
+        userArray.add(new User("Soy sauce\nnước tương"));
+        userArray.add(new User("Pepper\nhạt tiêu"));
+        userArray.add(new User("Vinegar\ngiấm"));
 
         audio_list.add(R.raw.spspices);
         audio_list.add(R.raw.spchillisauce);

@@ -26,7 +26,11 @@
         <activity android:name=".WordGroupActivity" />
         <activity android:name=".AllFoodsActivity" />
         <activity android:name=".GrammarActivity" />
-        <activity android:name=".GramGroupActivity"></activity>
+        <activity android:name=".GramGroupActivity" />
+        <activity android:name=".ListeningActivity" />
+        <activity android:name=".SituationActivity" />
+        <activity android:name=".EnglishForKidActivity" />
+        <activity android:name=".RunSingleAudioActivity"></activity>
     </application>
 
 </manifest>

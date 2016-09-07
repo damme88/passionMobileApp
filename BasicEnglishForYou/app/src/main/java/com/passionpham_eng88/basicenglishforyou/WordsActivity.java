@@ -81,6 +81,7 @@ public class WordsActivity extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAffinity();
                 Intent menuScreen = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(menuScreen);
             }
@@ -145,14 +146,14 @@ public class WordsActivity extends AppCompatActivity {
 
             public  void ShowWordGroupScreen(int type)
             {
-                Intent wordGroupScreen = new Intent(getApplicationContext(), WordGroupActivity.class);
+                Intent wordGroupScreen = new Intent(WordsActivity.this, WordGroupActivity.class);
                 wordGroupScreen.putExtra("Type", type);
                 startActivity(wordGroupScreen);
             }
 
             public  void ShowAllFoodGroup()
             {
-                Intent allFood = new Intent(getApplicationContext(), AllFoodsActivity.class);
+                Intent allFood = new Intent(WordsActivity.this, AllFoodsActivity.class);
                 startActivity(allFood);
             }
         });

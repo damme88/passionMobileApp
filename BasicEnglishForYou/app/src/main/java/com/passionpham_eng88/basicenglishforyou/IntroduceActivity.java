@@ -53,6 +53,7 @@ public class IntroduceActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAffinity();
                 Intent menuScreen = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(menuScreen);
             }

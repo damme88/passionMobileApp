@@ -34,7 +34,6 @@ public class GrammarActivity extends AppCompatActivity {
         userArray.add(new User("TƯƠNG LAI ĐƠN"));
         userArray.add(new User("TƯƠNG LAI HOÀN THÀNH"));
         userArray.add(new User("TƯƠNG LAI TIẾP DIỄN"));
-        userArray.add(new User("MỘT SỐ CẤU TRÚC KHÁC"));
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +50,7 @@ public class GrammarActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v,
                                     final int position, long id) {
 
-                Intent grammarGroup = new Intent(getApplicationContext(), GramGroupActivity.class);
+                Intent grammarGroup = new Intent(GrammarActivity.this, GramGroupActivity.class);
                 grammarGroup.putExtra("Type", position);
                 startActivity(grammarGroup);
             }
@@ -63,6 +62,7 @@ public class GrammarActivity extends AppCompatActivity {
                 if (userArray.size() > 0) {
                     userArray.clear();
                 }
+                finishAffinity();
                 Intent menuScreen = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(menuScreen);
             }

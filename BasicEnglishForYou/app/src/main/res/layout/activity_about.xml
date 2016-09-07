@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#a2d7f5"
+    android:background="#edf0f2"
     tools:context="com.passionpham_eng88.basicenglishforyou.AboutActivity"
     android:id="@+id/aboutScreen">
 
@@ -21,4 +21,16 @@
         android:layout_toStartOf="@+id/btnStart"
         android:layout_marginRight="47dp"
         android:layout_marginEnd="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editInfoText"
+        android:layout_above="@+id/btnExit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

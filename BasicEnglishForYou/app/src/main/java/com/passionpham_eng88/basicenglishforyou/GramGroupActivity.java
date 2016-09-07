@@ -11,16 +11,6 @@ public class GramGroupActivity extends AppCompatActivity {
 
     Button btnBack;
     RelativeLayout selfDesScreen;
-    public final int SIM_PRESENT = 0;
-    public final int CONTINOUS_PRESENT = 1;
-    public final int PERFECT_PRESENT = 2;
-    public final int PERFECT_CONTINUOUS_PRESENT = 3;
-    public final int SIM_PAST = 4;
-    public final int CONTINOUS_PAST = 5;
-    public final int PERFECT_PAST = 6;
-    public final int SIM_FUTURE = 7;
-    public final int PEFECT_FUTURE = 8;
-    public final  int CONTINOUS_FUTURE = 9;
 
     Integer[] selfImg={
             R.drawable.grasimpre,
@@ -58,9 +48,11 @@ public class GramGroupActivity extends AppCompatActivity {
             type  = extras.getInt("Type");
         }
         Init(type);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAffinity();
                 Intent menuScreen = new Intent(getApplicationContext(), GrammarActivity.class);
                 startActivity(menuScreen);
             }

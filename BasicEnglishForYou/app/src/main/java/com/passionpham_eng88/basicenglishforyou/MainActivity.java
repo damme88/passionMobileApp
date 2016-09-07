@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     Button btn_exit;
 
     Button btn_info;
-    RelativeLayout mainScreen;
+    RelativeLayout main_screen;
     protected void MessageMap()
     {
-        mainScreen = (RelativeLayout)findViewById(R.id.mainScreen);
+        main_screen = (RelativeLayout)findViewById(R.id.mainScreen);
         btn_begin = (Button)findViewById(R.id.btnStart);
         btn_exit = (Button)findViewById(R.id.btnExit);
         btn_info = (Button)findViewById(R.id.btnAbout);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         // Call message map
         MessageMap();
 
-        mainScreen.setBackgroundResource(R.drawable.bkgnmain);
+        main_screen.setBackgroundResource(R.drawable.mainbkgn);
         btn_begin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent aboutScreen = new Intent(MainActivity.this, AboutActivity.class);
+                aboutScreen.putExtra(("Type"), 0);
                 startActivity(aboutScreen);
             }
         });
