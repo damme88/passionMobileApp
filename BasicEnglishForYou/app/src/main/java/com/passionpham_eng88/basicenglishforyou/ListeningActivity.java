@@ -165,6 +165,7 @@ public class ListeningActivity extends AppCompatActivity {
                 if (userArray.size() > 0) {
                     userArray.clear();
                 }
+                
                 finishAffinity();
                 Intent menuScreen = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(menuScreen);
