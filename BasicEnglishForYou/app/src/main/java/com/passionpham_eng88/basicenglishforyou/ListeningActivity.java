@@ -9,6 +9,9 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class ListeningActivity extends AppCompatActivity {
@@ -119,6 +122,10 @@ public class ListeningActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listening);
+        AdView mAdView = (AdView) findViewById(R.id.adViewli);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         MessageMap();
         Init();
         userAdapter = new UserCustomListView(ListeningActivity.this, R.layout.row, userArray);

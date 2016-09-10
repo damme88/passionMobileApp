@@ -11,7 +11,7 @@
     android:background="#ffffff"
     tools:context="com.passionpham_eng88.basicenglishforyou.MenuActivity">
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/adViewMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         ads:adSize="BANNER"
@@ -26,7 +26,8 @@
         android:layout_height="400dp"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/adView">
+        android:layout_below="@+id/adViewMenu"
+        android:layout_above="@+id/menuBack">
     </ListView>
 
     <Button

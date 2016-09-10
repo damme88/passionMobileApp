@@ -4,6 +4,7 @@ import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -53,7 +54,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         // Thiết lập banner quảng cáo trên app
-        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdView mAdView = (AdView) findViewById(R.id.adViewMenu);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
@@ -96,7 +97,8 @@ public class MenuActivity extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent main_screen = new Intent(MenuActivity.this, MainActivity.class);
+                finishAffinity();
+                Intent main_screen = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(main_screen);
             }
         });

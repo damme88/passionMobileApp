@@ -218,6 +218,7 @@ public class WordGroupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_group);
+
         AdView mAdView = (AdView) findViewById(R.id.adViewWg);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -292,6 +293,10 @@ public class WordGroupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                if (audio_player.isPlaying())
+                {
+                    audio_player.stop();
+                }
                 timer = new Thread() {
                     public void run() {
                         try {
@@ -442,37 +447,87 @@ public class WordGroupActivity extends AppCompatActivity {
     public void InitJob()
     {
         getSupportActionBar().setTitle("NGHỀ NGHIỆP");
-        userArray.add(new User("Actor\nNam diễn viên"));
-        userArray.add(new User("Actress\nNữ diễn viên"));
-        userArray.add(new User("Athlete\nVận động viên"));
+        userArray.add(new User("Baker\n Thợ làm bánh"));
+        userArray.add(new User("Photographer\n Thợ ảnh"));
+        userArray.add(new User("Barber\n Thợ Cắt tóc"));
+        userArray.add(new User("Hairdresser\n Thợ làm đầu"));
+        userArray.add(new User("Tailor\n Thợ may"));
+        userArray.add(new User("Builder\n Thợ xây"));
+        userArray.add(new User("Carpenter\n Thợ mộc"));
+        userArray.add(new User("Electrician\n Thợ điện"));
+        userArray.add(new User("Plumber\n Thợ sửa ống nước"));
+        userArray.add(new User("Welder\n Thợ Hàn"));
+        userArray.add(new User("Musician\n Nhạc sỹ"));
+        userArray.add(new User("Painter\n Họa sỹ"));
+        userArray.add(new User("Singer\n Ca sỹ"));
+        userArray.add(new User("Bodyguard\n Vệ sỹ"));
+        userArray.add(new User("Dentist\n Nha sỹ"));
+        userArray.add(new User("Accountant\n Kế toán"));
+        userArray.add(new User("Programmer\n Lập trình viên"));
+        userArray.add(new User("Actor\n Nam diễn viên"));
+        userArray.add(new User("Actress\n Nữ diễn viên"));
+        userArray.add(new User("Athlete\n Vận động viên"));
         userArray.add(new User("Chef\nBếp trưởng"));
-        userArray.add(new User("Fish man\nNgư dân"));
-        userArray.add(new User("Librarian\nThủ thư"));
-        userArray.add(new User("Musician\nNhạc sỹ"));
-        userArray.add(new User("Pilot\nPhi công"));
-        userArray.add(new User("Policeman\nCảnh sát"));
-        userArray.add(new User("Post man\nNgười đưa thư"));
-        userArray.add(new User("Queen\nnữ hoàng"));
-        userArray.add(new User("Sales man\nNgười bán hàng"));
-        userArray.add(new User("Secretary\nThư ký"));
-        userArray.add(new User("Nurse\ny tá"));
-        userArray.add(new User("Programmer\nLập trình viên"));
+        userArray.add(new User("Fish man\n Ngư dân"));
+        userArray.add(new User("Librarian\n Thủ thư"));
+        userArray.add(new User("Pilot\n Phi công"));
+        userArray.add(new User("Policeman\n Cảnh sát"));
+        userArray.add(new User("Post man\n Người đưa thư"));
+        userArray.add(new User("Sales man\n Người bán hàng"));
+        userArray.add(new User("Secretary\n Thư ký"));
+        userArray.add(new User("Nurse\n y tá"));
+        userArray.add(new User("Waiter\n Bồi bàn nam"));
+        userArray.add(new User("Waitress\n Bồi bán nữ"));
+        userArray.add(new User("Editor\n Biên tập viên"));
+        userArray.add(new User("Journalist\n Nhà báo"));
+        userArray.add(new User("Housewife\n Nội trợ"));
+        userArray.add(new User("Farmer\n Nông dân"));
+        userArray.add(new User("Worker\n Công nhân"));
+        userArray.add(new User("Engineer\n kỹ sư"));
+        userArray.add(new User("Architect\n Kiến trúc sư"));
+        userArray.add(new User("Lawyer\n Luật sư"));
 
+        audio_list.add(R.raw.jobaker);
+        audio_list.add(R.raw.jophotographer);
+        audio_list.add(R.raw.jobarber);
+        audio_list.add(R.raw.johairdresser);
+        audio_list.add(R.raw.jotailor);
+        audio_list.add(R.raw.jobuilder);
+        audio_list.add(R.raw.jocarpenter);
+        audio_list.add(R.raw.joelectrician);
+        audio_list.add(R.raw.joplumber);
+        audio_list.add(R.raw.jowelder);
+        audio_list.add(R.raw.jomusician);
+        audio_list.add(R.raw.jopainter);
+        audio_list.add(R.raw.josinger);
+        audio_list.add(R.raw.jobodyguard);
+        audio_list.add(R.raw.jodentist);
+
+        audio_list.add(R.raw.joccountant);
+        audio_list.add(R.raw.joprogrammer);
         audio_list.add(R.raw.joactor);
         audio_list.add(R.raw.joactress);
         audio_list.add(R.raw.joathlete);
         audio_list.add(R.raw.jochef);
         audio_list.add(R.raw.jofishman);
         audio_list.add(R.raw.jolibrarian);
-        audio_list.add(R.raw.jomusician);
+
         audio_list.add(R.raw.jopilot);
         audio_list.add(R.raw.jopoliceman);
         audio_list.add(R.raw.jopostman);
-        audio_list.add(R.raw.joqueen);
         audio_list.add(R.raw.josalesman);
         audio_list.add(R.raw.josecretary);
         audio_list.add(R.raw.jonurse);
-        audio_list.add(R.raw.joprogrammer);
+        audio_list.add(R.raw.jowaiter);
+        audio_list.add(R.raw.jowaitress);
+        audio_list.add(R.raw.joeditor);
+        audio_list.add(R.raw.jojournalist);
+        audio_list.add(R.raw.johousewife);
+        audio_list.add(R.raw.jofarmer);
+        audio_list.add(R.raw.joworker);
+        audio_list.add(R.raw.joengineer);
+        audio_list.add(R.raw.joarchitect);
+        audio_list.add(R.raw.jolawyer);
     }
     public void InitFish()
     {

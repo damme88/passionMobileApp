@@ -8,6 +8,9 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class SituationActivity extends AppCompatActivity {
@@ -29,8 +32,7 @@ public class SituationActivity extends AppCompatActivity {
             "Mua Bán",
             "Thanh Toán",
             "Mẫu câu: Tôi cảm thấy.",
-            "Mẫu câu: Cảm xúc!",
-            "Giới Thiệu Bản Thân",
+            "Mẫu câu: Cảm xúc!"
     };
 
     Integer[] imgid={
@@ -41,7 +43,6 @@ public class SituationActivity extends AppCompatActivity {
             R.drawable.payment,
             R.drawable.feeling,
             R.drawable.relationship,
-            R.drawable.aboutme,
     };
 
     public  void MessageMap()
@@ -54,6 +55,11 @@ public class SituationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_situation);
+
+        // Thiết lập banner quảng cáo trên app
+        AdView mAdView = (AdView) findViewById(R.id.adViewsi);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         getSupportActionBar().setTitle("Tình Huống Cơ bản");
         MessageMap();
@@ -96,9 +102,6 @@ public class SituationActivity extends AppCompatActivity {
                     case LIFE_STATE:
                         ShowItemList(LIFE_STATE);
                         break;
-                    case INTRODUCEME:
-                        ShowIntroduceMe();
-                        break;
                     default:
                         break;
                 }
@@ -115,7 +118,7 @@ public class SituationActivity extends AppCompatActivity {
 
     public void ShowIntroduceMe()
     {
-        Intent introduceScreen = new Intent(SituationActivity.this, IntroduceActivity.class);
+        Intent introduceScreen = new Intent(getApplicationContext(), IntroduceActivity.class);
         startActivity(introduceScreen);
     }
 }

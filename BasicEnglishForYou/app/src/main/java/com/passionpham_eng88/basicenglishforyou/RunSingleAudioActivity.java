@@ -14,6 +14,9 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class RunSingleAudioActivity extends AppCompatActivity {
 
     EditText fileText;
@@ -180,7 +183,10 @@ public class RunSingleAudioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run_single_audio);
-
+        // Thiết lập banner quảng cáo trên app
+        AdView mAdView = (AdView) findViewById(R.id.adViewSingle);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         MessageMap();
         Bundle extras = getIntent().getExtras();
         int type = -1;

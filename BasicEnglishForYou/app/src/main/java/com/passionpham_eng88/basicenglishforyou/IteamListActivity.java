@@ -287,8 +287,8 @@ public class IteamListActivity extends AppCompatActivity {
         userArray.add(new User("Can you do me a favor? \r\n(Bạn có thể giúp tôi một việc ko)"));
         userArray.add(new User("Can you please say that again\r\n(Bạn có thể nói lại điều đó ko)"));
         userArray.add(new User("Does anyone here speak English ?\r\n(Ở đây có ai nói tiếng anh ko)"));
+        userArray.add(new User("Please call the police\r\n(Hãy gọi công an)"));
         userArray.add(new User("Please speak more slowly\r\n(Hãy nói chậm hơn)"));
-        userArray.add(new User("please call the police\r\n(Hãy gọi công an)"));
 
         audio_list = new ArrayList<Integer>();
         audio_list.add(R.raw.h1);
@@ -297,6 +297,7 @@ public class IteamListActivity extends AppCompatActivity {
         audio_list.add(R.raw.h4);
         audio_list.add(R.raw.h5);
         audio_list.add(R.raw.h6);
+        audio_list.add(R.raw.h7);
     }
     public void InitBuying()
     {
@@ -374,7 +375,6 @@ public class IteamListActivity extends AppCompatActivity {
         userArray.add(new User("I am bored!\n(Tôi thấy chán nản)"));
         userArray.add(new User("I am in love!\n(Tôi đang yêu)"));
         userArray.add(new User("I am jealous!\n(Tôi đang ghen)"));
-        userArray.add(new User("I am lovesick!\n(Tôi bị thất tình)"));
         userArray.add(new User("I am confused!\n(Tôi thấy rối rắm)"));
         userArray.add(new User("I am pleased!\n(Tôi thấy khoái chí)"));
         userArray.add(new User("I am surprised!\n(Tôi thấy ngạc nhiên)"));
@@ -385,6 +385,7 @@ public class IteamListActivity extends AppCompatActivity {
         userArray.add(new User("I am disappointed!\n(Tôi thấy thất vọng)"));
         userArray.add(new User("I am satisfied!\n(Tôi thấy mãn nguyện)"));
         userArray.add(new User("I feel silly!\n(Tôi thấy thật ngỡ ngẩn)"));
+        userArray.add(new User("I am lovesick!\n(Tôi bị thất tình)"));
 
         audio_list.add(R.raw.flangry);
         audio_list.add(R.raw.flhappy);
@@ -403,6 +404,7 @@ public class IteamListActivity extends AppCompatActivity {
         audio_list.add(R.raw.fldisappointed);
         audio_list.add(R.raw.flsatisfied);
         audio_list.add(R.raw.flsilly);
+        audio_list.add(R.raw.fllovesick);
     }
     public void InitLifeState()
     {
