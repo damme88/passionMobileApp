@@ -22,20 +22,27 @@
     </com.google.android.gms.ads.AdView>
     <ListView
         android:id="@+id/menuListview"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/adViewMenu"
-        android:layout_above="@+id/menuBack">
+        android:layout_above="@+id/menuBack"
+        android:layout_margin="5dp">
     </ListView>
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
         android:id="@+id/menuBack"
-        android:background="@drawable/exit"
-        android:layout_alignParentBottom="true"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/custombutton"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
 </RelativeLayout>

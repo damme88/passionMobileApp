@@ -11,39 +11,55 @@
     tools:context="com.passionpham_eng88.basicenglishforyou.WordGroupActivity">
     <ListView
         android:id="@+id/wgListView"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wgBack"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
         android:layout_below="@+id/adViewWg">
     </ListView>
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/wgBack"
-        android:background="@drawable/exit"
+        android:layout_margin="5dp"
+        android:text="Exit"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/wgPlayAll"
-        android:background="@drawable/playall"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_margin="5dp"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:text="Run All"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/wgBack"
         android:layout_toEndOf="@+id/wgBack" />
 
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/wgStopAll"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/stop"
+        android:layout_margin="5dp"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:text="Stop"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/wgPlayAll"
         android:layout_toEndOf="@+id/wgPlayAll" />

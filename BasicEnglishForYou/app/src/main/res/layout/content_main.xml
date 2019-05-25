@@ -14,35 +14,44 @@
     tools:showIn="@layout/activity_main"
     android:id="@+id/mainScreen">
     <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/begin"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="Start"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
         android:id="@+id/btnStart"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
 
 
     <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:id="@+id/btnExit"
-        android:background="@drawable/exit"
+        android:text="Exit"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/btnStart"
-        android:layout_toStartOf="@+id/btnStart"
-        android:layout_marginRight="47dp"
-        android:layout_marginEnd="47dp" />
+        android:layout_margin="10dp"/>
 
     <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:id="@+id/btnAbout"
-        android:background="@drawable/infoicon"
+        android:text="About"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/btnStart"
-        android:layout_toEndOf="@+id/btnStart"
-        android:layout_marginLeft="49dp"
-        android:layout_marginStart="49dp" />
+        android:layout_margin="10dp"/>
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewMain"
         android:layout_width="wrap_content"

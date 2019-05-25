@@ -11,37 +11,50 @@
     tools:context="com.passionpham_eng88.basicenglishforyou.IteamListActivity">
     <ListView
         android:id="@+id/commonListview"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/adViewItemList">
+        android:layout_below="@+id/adViewItemList"
+        android:layout_above="@+id/commonBack"
+        android:layout_margin="5dp">
     </ListView>
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/commonBack"
-        android:background="@drawable/exit"
+        android:background="@drawable/custombutton"
+        android:text="Exit"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAllCaps="false"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/commonPlayAll"
-        android:background="@drawable/playall"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:background="@drawable/custombutton"
+        android:text="Play All"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/commonBack"
         android:layout_toEndOf="@+id/commonBack" />
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/commonStopAll"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/stop"
+        android:background="@drawable/custombutton"
+        android:text="Stop All"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/commonPlayAll"
         android:layout_toEndOf="@+id/commonPlayAll" />
@@ -53,6 +66,7 @@
         ads:adUnitId="@string/banner_ad_unit_id"
         android:layout_above="@+id/menuBack"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp">
     </com.google.android.gms.ads.AdView>
 </RelativeLayout>

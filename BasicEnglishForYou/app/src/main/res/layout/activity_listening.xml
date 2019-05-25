@@ -13,29 +13,41 @@
 
     <ListView
         android:id="@+id/liListView"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:verticalScrollbarPosition="left"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/adViewli">
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/adViewli"
+        android:layout_margin="5dp">
     </ListView>
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/liBack"
-        android:background="@drawable/exit"
+        android:layout_margin="5dp"
+        android:text="Exit"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
         android:id="@+id/liStopAll"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/stop"
+        android:layout_margin="5dp"
+        android:text="Stop"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:background="@drawable/custombutton"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/liBack"
         android:layout_toEndOf="@+id/liBack" />
@@ -47,6 +59,7 @@
         ads:adUnitId="@string/banner_ad_unit_id"
         android:layout_above="@+id/liBack"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp">
     </com.google.android.gms.ads.AdView>
 </RelativeLayout>

@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_begin;
     Button btn_exit;
-
     Button btn_info;
     RelativeLayout main_screen;
     protected void MessageMap()
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        getSupportActionBar().setTitle("English Notebook For You");
+        getSupportActionBar().setTitle("Sổ Tay Tiếng Anh");
         // Call message map
         MessageMap();
 

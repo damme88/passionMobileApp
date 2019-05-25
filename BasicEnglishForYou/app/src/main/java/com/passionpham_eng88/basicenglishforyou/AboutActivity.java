@@ -35,7 +35,7 @@ public class AboutActivity extends AppCompatActivity {
 
         if (type == 0)
         {
-            edtInfoText.setText("English Notebook là một ứng dụng " +
+            edtInfoText.setText("Sổ tay tiếng anh là một ứng dụng " +
                     "giúp bạn tra cứu nhanh những nhóm từ vựng " +
                     "trong các chủ đề thông dụng hàng ngày như: \n" +
                     "+ Nhóm từ về đồ vật trong nhà. \n" +
