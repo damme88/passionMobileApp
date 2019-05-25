@@ -116,9 +116,4 @@ public class SituationActivity extends AppCompatActivity {
         startActivity(itemListScreen);
     }
 
-    public void ShowIntroduceMe()
-    {
-        Intent introduceScreen = new Intent(getApplicationContext(), IntroduceActivity.class);
-        startActivity(introduceScreen);
-    }
 }

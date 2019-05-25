@@ -20,7 +20,6 @@
         </activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".IntroduceActivity" />
         <activity android:name=".IteamListActivity" />
         <activity android:name=".WordsActivity" />
         <activity android:name=".WordGroupActivity" />

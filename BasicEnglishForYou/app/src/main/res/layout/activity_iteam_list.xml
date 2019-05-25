@@ -21,7 +21,7 @@
     </ListView>
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/commonBack"
         android:background="@drawable/custombutton"
         android:text="Exit"
@@ -34,7 +34,7 @@
         android:layout_margin="5dp"/>
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/commonPlayAll"
         android:background="@drawable/custombutton"
         android:text="Play All"
@@ -47,7 +47,7 @@
         android:layout_toEndOf="@+id/commonBack" />
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/commonStopAll"
         android:background="@drawable/custombutton"
         android:text="Stop All"

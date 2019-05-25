@@ -35,35 +35,20 @@ public class AboutActivity extends AppCompatActivity {
 
         if (type == 0)
         {
-            edtInfoText.setText("Sổ tay tiếng anh là một ứng dụng " +
-                    "giúp bạn tra cứu nhanh những nhóm từ vựng " +
-                    "trong các chủ đề thông dụng hàng ngày như: \n" +
-                    "+ Nhóm từ về đồ vật trong nhà. \n" +
-                    "+ Nhóm từ về đồ ăn thực phẩm \n" +
-                    "+ Nhóm từ về nghề nghiệp...\n" +
-                    "Bên cạnh đó. Bạn cũng có thể tra cứu những " +
-                    "mẫu câu tiếng anh thường sử dụng trong các " +
-                    "tình huống thực tế ngoài đời như: \n" +
-                    "+ Khi đi du lịch, gặp gỡ lần đầu tiên \n" +
-                    "+ Khi đi mua hàng, khi cần sự trợ giúp...\n" +
-                    "English Notebook tóm tắt các mẫu ngữ pháp thông dụng và cơ bản.\n"+
-                    "English Notebook có một số lượng bài nghe cơ bản " +
-                    "và ngắn gọn giúp bạn luyện nghe mỗi ngày.\n" +
-                    "Ngoài ra một phần nhỏ gồm các bài học tiếng anh " +
-                    "dành cho trẻ em, với hình vẽ minh họa ngộ nghĩnh. " +
-                    "Có thể giúp bé học tiếng anh như một trò chơi đố vui.\n" +
-                    "Mọi ý kiến đóng góp tích cực xin vui lòng gửi về email: " +
-                    "Damme88@gmail.com. " +
-                    "Xin cảm ơn. ");
+            edtInfoText.setText("ENote là một ứng dụng sổ tay tiếng anh.\n" +
+                    "ENote giúp bạn học tiếng anh lúc nhàn rỗi.\n" +
+                    "ENote có nhiều các mẫu câu trong các tình huống thực tế.\n" +
+                    "ENote tóm tắt các mẫu ngữ pháp thông dụng và cơ bản.\n"+
+                    "ENote có số lượng bài hội thoại đa dạng phong phú.\n" +
+                    "ENote có một số bài mẫu dành cho trẻ em.\n"+
+                    "Sản phẩm thuộc sỡ hữu của blog: Phattrienphanmem123az.com");
         }
         else if (type == 1)
         {
-            edtInfoText.setText("Đây là những bài nghe tiếng anh cho trẻ em\n" +
+            edtInfoText.setText("Đây là những bài nghe tiếng anh cho trẻ em.\n" +
                     "Chọn bài trong list, sau đó chọn nút play.\n" +
-                    "Những hình vẽ trong mỗi bài không phải là mô tả nội dung bài,\n" +
-                    "mà đó là những hình vẽ thể hiện một số từ vựng trong bài.\n" +
-                    "Bạn có thể cho bé nghe và nhận biết hình minh họa là từ vựng nào trong bài.\n" +
-                    "Bạn có chọn chức năng [Hiện nội dung], để xem nội dụng bài học.");
+                    "Hình vẽ trong thể hiện một số từ vựng trong bài.\n" +
+                    "Chức năng [show content], để xem nội dụng bài học.");
         }
         //about_screen.setBackgroundResource(R.drawable.aboutbkgn);
         btnBack.setOnClickListener(new View.OnClickListener() {

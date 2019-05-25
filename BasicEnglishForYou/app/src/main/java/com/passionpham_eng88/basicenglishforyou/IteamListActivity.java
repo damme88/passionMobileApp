@@ -317,7 +317,7 @@ public class IteamListActivity extends AppCompatActivity {
         userArray.add(new User("Have you got anything cheaper?\r\n(có cái rẻ hơn ko)"));
         userArray.add(new User("Do you deliver ?\r\n(Có giao hàng ko)"));
 
-        userArray.add(new User("I need a something\r\n(Tôi cần vai thứ)"));
+        userArray.add(new User("I need a something\r\n(Tôi cần vài thứ)"));
         userArray.add(new User("May I try this on, please?\r\n(tôi có thể thử)"));
         userArray.add(new User("It doesn’t fit me\r\n(Nó không vừa với tôi)"));
         userArray.add(new User("I need a bigger size?\r\n(Tôi cần size lớn hơn)"));

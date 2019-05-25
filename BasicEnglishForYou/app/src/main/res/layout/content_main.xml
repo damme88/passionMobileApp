@@ -15,7 +15,7 @@
     android:id="@+id/mainScreen">
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:text="Start"
         android:textStyle="bold"
         android:textSize="14dp"
@@ -29,7 +29,7 @@
 
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/btnExit"
         android:text="Exit"
         android:textStyle="bold"
@@ -42,7 +42,7 @@
 
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/btnAbout"
         android:text="About"
         android:textStyle="bold"

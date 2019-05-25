@@ -134,14 +134,14 @@
     </com.google.android.gms.ads.AdView>
     <Button
         android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:id="@+id/allFoodBack"
         android:background="@drawable/custombutton"
         android:textAllCaps="false"
         android:textStyle="bold"
         android:textSize="14dp"
         android:textColor="#ffffff"
-        android:text="Exit"
+        android:text="Back"
         android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
